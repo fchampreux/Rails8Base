@@ -7,4 +7,4 @@ You can check out the [devcontainer configuration](./.devcontainer/devcontainer.
 You can check out our [task configuration](./.codesandbox/tasks.json) to know what we run on VM start.
 
 # Rails-8-base
-Basic configuration for my Rails 8 apps
+Basic configuration for my Rails 8 apps.
