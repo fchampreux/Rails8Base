@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Updating RubyGems..."
-gem update --system -N
+gem update --global -N
 
 echo "Installing dependencies..."
 bundle install
