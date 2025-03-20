@@ -1,0 +1,6 @@
+# With protected credentials:
+# username: <%= Rails.application.credentials.databases[:username] %>
+# password: <%= Rails.application.credentials.databases[:password] %>
+# schema_search_path: <%= "#{ Rails.application.credentials.databases[:schemas] }" %>
+# To edit credentials :
+#                       rails credentials:edit
