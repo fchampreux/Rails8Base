@@ -1,7 +1,7 @@
 {
   "name": "Ruby on Rails",
   "dockerComposeFile": "docker-compose.yml",
-  "workspaceFolder": "/project/Rails8-Box",
+  "workspaceFolder": "/project/Rails8Base",
   "service": "app",
   "features": {
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {

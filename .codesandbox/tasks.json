@@ -1,6 +1,8 @@
 {
     // These tasks will run in order when initializing your CodeSandbox project.
-    "setupTasks": ["gem update --system -N", "bundle install"],
+    "setupTasks": [ "gem update --system -N", 
+                    "bundle install", 
+                    "chmod 0600 .devcontainer/.pgpass"],
   
     // These tasks can be run from CodeSandbox. Running one will open a log in the app.
     "tasks": {
