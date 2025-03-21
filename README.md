@@ -1,6 +1,6 @@
 # README
 
-This repository proposes a base to automatically implement de Rails 8 / Postgres container.
+This repository proposes a base to automatically implement a Rails 8/Postgres container.
 
 ## Technical specifications
 Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml to discover the base containers.
