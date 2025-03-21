@@ -17,6 +17,7 @@ Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml t
  - Define a system variable for this repository: PGPASSFILE=/.devcontainer/.pgpass
  - Run the db_init.sh script => databases are persisted
  - Generate the master.key file and crypted credentials for Rails : (credentials.yml.enc must not be present at this time)
+   
    *EDITOR="nano" bin/rails credentials:edit*
 
 Further reboots should automatically start the Rails 8 website, visible on port 80 from your web browser.
