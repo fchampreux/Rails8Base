@@ -23,8 +23,11 @@ Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml t
    Add the following:
    
    database:
+   
      password: *your_password as defined in .devcontainer/PG_Init_4_Rails.sql*
+   
      schema: rails_app
+
 
 Further reboots should automatically start the Rails 8 website, visible on port 80 from your web browser.
 
