@@ -19,10 +19,15 @@ Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml t
  - Generate the master.key file and crypted credentials for Rails : (credentials.yml.enc must not be present at this time)
    
    *EDITOR="nano" bin/rails credentials:edit*
+   
    Add the following:
+   
    database:
+   
      password: *your_password as defined in .devcontainer/PG_Init_4_Rails.sql*
+   
      schema: rails_app
+
 
 Further reboots should automatically start the Rails 8 website, visible on port 80 from your web browser.
 
