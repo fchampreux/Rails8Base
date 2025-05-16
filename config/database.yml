@@ -16,16 +16,20 @@ default: &default
   host: postgres
   adapter: postgresql
   encoding: unicode
-  schema_search_path: <%= Rails.application.credentials.database[:schema] %>
+  schema_search_path: rails_app
+  # schema_search_path: <%= Rails.application.credentials.database[:schema] %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: 5
 
 development:
   <<: *default
   database: rails_base_dev
   username: rails_user
-  password: <%= Rails.application.credentials.database[:password] %>
+  password: RailsApp
+  # password: <%= Rails.application.credentials.databases[:password] %>
+
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
@@ -62,7 +66,9 @@ test:
   <<: *default
   database: rails_base_test
   username: rails_user
-  password: <%= Rails.application.credentials.database[:password] %>
+  password: RailsApp
+# password: <%= Rails.application.credentials.databases[:password] %>
+
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -86,9 +92,9 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: rails_base_prod
+  database: rails_base_prod
   username: rails_user
-  password: <%= Rails.application.credentials.database[:password] %>
+  password: RailsApp
   cache:
     <<: *primary_production
     database: rails_base_production_cache
