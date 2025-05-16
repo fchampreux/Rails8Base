@@ -17,7 +17,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   schema_search_path: rails_app
-  # schema_search_path: <%= Rails.application.credentials.database[:schema] %>
+  # schema_search_path: <%= Rails.application.credentials.databases[:schema] %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -28,6 +28,7 @@ development:
   database: rails_base_dev
   username: rails_user
   password: RailsApp
+  schema_search_path: rails_app
   # password: <%= Rails.application.credentials.databases[:password] %>
 
   # The specified database role being used to connect to PostgreSQL.
