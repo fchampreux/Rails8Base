@@ -13,7 +13,7 @@
 # gem "pg"
 #
 default: &default
-  host: localhost
+  host: postgres
   adapter: postgresql
   encoding: unicode
   schema_search_path: rails_app
@@ -21,13 +21,6 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   pool: 5
-
-container:
-  <<: *default
-  host: postgres
-  database: rails_base_dev
-  username: rails_user
-  password: <%= Rails.application.credentials.databases[:password] %>
 
 development:
   <<: *default
