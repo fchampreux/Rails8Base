@@ -10,7 +10,6 @@
 CREATE USER rails_user NOSUPERUSER CREATEDB ENCRYPTED PASSWORD 'RailsApp';
 --
 -- Create databases 
-CREATE DATABASE rails_base_dev OWNER rails_user ENCODING UTF8 LC_COLLATE 'fr_FR.UTF8' LC_CTYPE 'fr_FR.UTF8' TEMPLATE template0;
-CREATE DATABASE rails_base_test OWNER rails_user ENCODING UTF8 LC_COLLATE 'fr_FR.UTF8' LC_CTYPE 'fr_FR.UTF8' TEMPLATE template0;
-CREATE DATABASE rails_base_prod OWNER rails_user ENCODING UTF8 LC_COLLATE 'fr_FR.UTF8' LC_CTYPE 'fr_FR.UTF8' TEMPLATE template0;
+CREATE DATABASE rails_base_dev OWNER rails_user ENCODING UTF8 LOCALE 'fr_CH.utf8' TEMPLATE template0;
+CREATE DATABASE rails_base_test OWNER rails_user ENCODING UTF8 LOCALE 'fr_CH.utf8' TEMPLATE template0;
 --

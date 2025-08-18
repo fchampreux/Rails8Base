@@ -13,7 +13,7 @@
     "ghcr.io/devcontainers/features/ruby:1": {
       "version": "3.4.2"
     },
-    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
       "plugins": "bundler rails ruby"
     }
   },
@@ -35,7 +35,7 @@
   },
   
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": ".devcontainer/db_init.sh",
+  "postCreateCommand": ".devcontainer/db_init.sh"
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
