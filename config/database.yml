@@ -13,7 +13,6 @@
 # gem "pg"
 #
 default: &default
-  host: postgres
   adapter: postgresql
   encoding: unicode
   schema_search_path: rails_app
@@ -24,9 +23,10 @@ default: &default
 
 development:
   <<: *default
+  host: <%= Rails.application.credentials.databases.development[:host] %>
   database: rails_base_dev
   username: rails_user
-  password: <%= Rails.application.credentials.databases[:password] %>
+  password: <%= Rails.application.credentials.databases.development[:password] %>
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -62,6 +62,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  host: <%= Rails.application.credentials.databases.development[:host] %>
   database: rails_base_test
   username: rails_user
   password: <%= Rails.application.credentials.databases[:password] %>
