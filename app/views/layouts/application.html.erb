@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Rails Base" %></title>
+    <title><%= content_for(:title) || "Rails 8 Base" %></title>
+    <%= favicon_link_tag("ODQ_favicon64.ico") %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -24,8 +25,47 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+
+    <%= render "layouts/header" %>
+
+    <div id="content" class="border-2 border-solid rounded-sm border-red-400">
+      content
+      <div id="app-navigation" class="border-2 border-solid rounded-sm border-yellow-400">
+        navigation
+        <div id="app-search" class="border-2 border-solid rounded-sm border-blue-400">
+          search
+        </div>  
+        <div id="app-search-results" class="border-2 border-solid rounded-sm border-blue-400">
+          results
+        </div>  
+      </div>  
+
+      <main id="application" class="container mx-auto mt-28 px-5 flex border-2 border-solid rounded-sm border-orange-400">
+        application
+        <div id="app_menu" class="border-2 border-solid rounded-sm border-blue-400">
+          app-menu
+        </div>  
+        <div id="app_status" class="border-2 border-solid rounded-sm border-blue-400">
+          app-status
+        </div>  
+        <div id="app_content" class="border-2 border-solid rounded-sm border-blue-400"> 
+          <%= yield %>
+        </div> 
+        <div id="app_actions" class="order-2 border-solid rounded-sm border-blue-400">
+          app-actions
+        </div>  
+      </main>
+    </div>
+
+    <%= render "layouts/footer" %>
+
+    <!-- Child Modal window for generic use -->
+    <aside class="modal fade modal-remote" id="childModal" tabindex="-1" role="dialog" aria-labelledby="childModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content"></div>
+      </div>
+    </aside>
+
   </body>
+
 </html>

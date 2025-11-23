@@ -1,0 +1,17 @@
+<header class="border-2 border-solid rounded-sm border-emerald-400">
+  <div class="inline-grid grid-cols-5 gap-4">
+    <div id="brand_logo" class="border-2 border-solid rounded-sm border-emerald-400">
+      <%= image_tag($Logo, alt: "Back to home") %>
+    </div>
+    <div id="environment" class="border-2 border-solid rounded-sm border-emerald-400">
+      <b><%= Rails.env.production? ? "" : "#{Rails.env.capitalize} " %> </b>
+    </div>
+    <div id="page_title" class="border-2 border-solid rounded-sm border-emerald-400">
+      <%= yield(:page_heading || :title) %>
+    </div>
+    <div id="features" class="border-2 border-solid rounded-sm border-emerald-400">
+    </div>
+    <div id="portal_navigation" class="border-2 border-solid rounded-sm border-emerald-400">
+    </div>
+  </div>
+</header>

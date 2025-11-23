@@ -33,7 +33,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/credentials.yml
-/config/credentials.yml.enc
+#/config/credentials.yml.enc # Initial file contained only base credentials for development
 
 
 /app/assets/builds/*
