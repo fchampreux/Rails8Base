@@ -26,7 +26,7 @@ development:
   <<: *default
   database: rails_base_dev
   username: rails_user
-  password: <%= Rails.application.credentials.databases.development[:password] %>
+  password: <%= Rails.application.credentials.databases[:password] %>
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
