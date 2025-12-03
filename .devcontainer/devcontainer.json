@@ -1,42 +1,43 @@
 {
-  "name": "Ruby on Rails",
-  "dockerComposeFile": "docker-compose.yml",
-  "workspaceFolder": "/project/Rails8Base",
-  "service": "app",
-  "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "curl, libjemalloc2, libpq-dev, libvips, postgresql-client-16, build-essential, pkg-config"
+    "name": "Ruby on Rails",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspaces/Rails8Base",
+    "service": "app",
+    "features": {
+      "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+        "packages": "curl, libjemalloc2, libpq-dev, libvips, postgresql-client-16, build-essential, pkg-config"
+      },
+      "ghcr.io/devcontainers/features/git:1": {
+        "version": "latest"
+      },
+      "ghcr.io/devcontainers/features/ruby:1": {
+        "version": "3.4.5"
+      },
+      "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+        "plugins": "bundler rails ruby"
+      }
     },
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/ruby:1": {
-      "version": "3.4.2"
-    },
-    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
-      "plugins": "bundler rails ruby"
-    }
-  },
-
-  // Configure tool-specific properties.
-  "customizations": {
-    "vscode": {
-      "extensions": ["EditorConfig.EditorConfig"]
-    }
-  },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // This can be used to network with other containers or the host.
-  "forwardPorts": [5432],
-
-  // Environment variables
-  "containerEnv": {
-    "PGPASSFILE": ".devcontainer/.pgpass"
-  },
   
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": ".devcontainer/db_init.sh"
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
-}
+    // Configure tool-specific properties.
+    "customizations": {
+      "vscode": {
+        "extensions": ["EditorConfig.EditorConfig"]
+      }
+    },
+  
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // This can be used to network with other containers or the host.
+    "forwardPorts": [5432],
+  
+    // Environment variables
+    "containerEnv": {
+      "PGPASSFILE": ".devcontainer/.pgpass"
+    },
+    
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": ".devcontainer/db_init.sh"
+  
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+  }
+  

@@ -1,7 +1,7 @@
 {
-  "title": "Rails8-Box",
-  "description": "The easiest way to get started from Docker in CodeSandbox",
-  "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/rails/.codesandbox/icon.png",
-  "tags": ["ruby", "rails", "starter", "backend"],
-  "published": true
-}
+    "title": "Rails8-Box",
+    "description": "The easiest way to get started from Docker in CodeSandbox",
+    "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/rails/.codesandbox/icon.png",
+    "tags": ["ruby", "rails", "starter", "backend"],
+    "published": true
+  }

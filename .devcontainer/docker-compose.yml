@@ -6,7 +6,10 @@ services:
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
-  postgres:
+  # For non standard service name, make sure that the service's host name
+  # is aliased on localhost in /etc/hosts of the app container
+  # Example: 127.0.0.1       localhost.localdomain localhost pg_database
+  pg_database:
     image: postgres:16.2-alpine
     restart: unless-stopped
     volumes:

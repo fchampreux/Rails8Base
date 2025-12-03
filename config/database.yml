@@ -14,6 +14,7 @@
 #
 default: &default
   adapter: postgresql
+  host: pg_database
   encoding: unicode
   schema_search_path: rails_app
   # For details on connection pooling, see Rails configuration guide
@@ -23,10 +24,9 @@ default: &default
 
 development:
   <<: *default
-  host: <%= Rails.application.credentials.databases.development[:host] %>
   database: rails_base_dev
   username: rails_user
-  password: <%= Rails.application.credentials.databases.development[:password] %>
+  password: <%= Rails.application.credentials.database[:password] %>
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -62,10 +62,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  host: <%= Rails.application.credentials.databases.development[:host] %>
   database: rails_base_test
   username: rails_user
-  password: <%= Rails.application.credentials.databases[:password] %>
+  password: <%= Rails.application.credentials.database[:password] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -92,7 +91,7 @@ production:
     <<: *default
   database: rails_base_prod
   username: rails_user
-  password: <%= Rails.application.credentials.databases[:password] %>
+  password: <%= Rails.application.credentials.database[:password] %>
   cache:
     <<: *primary_production
     database: rails_base_production_cache
