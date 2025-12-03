@@ -31,3 +31,5 @@ Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml t
 
 Further reboots should automatically start the Rails 8 website, visible on port 80 from your web browser.
 
+To start the Dev server, use **bin/dev**.
+

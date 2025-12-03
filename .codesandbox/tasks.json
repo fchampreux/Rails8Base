@@ -1,0 +1,25 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    "gem update --system -N",
+    "bundle install",
+    "chmod 0600 .devcontainer/.pgpass",
+    "sh .devcontainer/db_init.sh"
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "initDB": {
+      "name": "Initialise database",
+      "command": "bin/rails db:prepare"
+    },
+    "dev": {
+      "name": "Start Rails",
+      "command": "bin/rails s",
+      "preview": {
+        "port": 3000
+      },
+      "runAtStart": true
+    }
+  }
+}
