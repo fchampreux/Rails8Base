@@ -22,6 +22,9 @@
     "customizations": {
       "vscode": {
         "extensions": ["EditorConfig.EditorConfig"]
+      },
+      "files.associations": {
+        "*.css": "tailwindcss"
       }
     },
   
