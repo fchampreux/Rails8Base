@@ -24,13 +24,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="font-display">
+  <body class="font-quicksand">
 
-  <div class="min-h-full">
+  <%= render "layouts/header" %>
 
-    <%= render "layouts/header" %>
+    <div class="min-h-full">
 
-    <main id="application" class="container mx-auto mt-28 px-5 flex border-2 border-solid rounded-sm border-orange-400">
+    <div id="application" class="font-quicksand container mx-auto mt-28 px-5 flex border-2 border-solid rounded-sm border-orange-400">
       application
       <div id="app_menu" class="border-2 border-solid rounded-sm border-blue-400">
         app-menu
@@ -44,7 +44,7 @@
       <div id="app_actions" class="order-2 border-solid rounded-sm border-blue-400">
         app-actions
       </div>  
-    </main>
+    </div>
   </div>
 
   <div id="content" class="font-display border-2 border-solid rounded-sm border-red-400">

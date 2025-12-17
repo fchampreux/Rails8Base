@@ -8,7 +8,7 @@ $AppName = "Data Governance Executive"
 ## Logo and backgrounds
 # $Logo = 'oblique-4.1.1/styles/images/logo.svg'
 # $Logo = 'ODQ_Flex.png'
-$Logo = "ODQ_Logo_48.png"
+$Logo = "ODQ_Logo_compact_white_128.png"
 # $Logo = 'Logo-Nr-Oakland-150x45.png'
 $Splash = "CarteSuisse2.png"
 $Organisation = "Open Data Quality"
