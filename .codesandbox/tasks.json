@@ -27,7 +27,7 @@
     },
     "dev": {
       "name": "Start Rails",
-      "command": "bin/rails s",
+      "command": "bin/dev",
       "runAtStart": true,
       "preview": {
         "port": 3000
