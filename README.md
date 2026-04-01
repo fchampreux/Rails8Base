@@ -6,7 +6,7 @@ This repository proposes a base to automatically implement a Rails 8/Postgres co
 
 Please check the .devcontainer/Dockerfile and .devcontainer/docker-compose.yml to discover the base containers.
 
-- Ruby 3.4.7
+- Ruby 4.0.2
 - Rails 8.1
 - PostgreSQL 16
 - db_init.sh script creates dev/test/prod databases
