@@ -7,7 +7,7 @@
       <%= Rails.env.production? ? "" : "#{Rails.env.capitalize[0..2]} / " %>Object type
     </div>      
     <div id="page-title" class="mx-4 px-4 w-3/4 border-2 border-solid rounded-sm border-blue-400">
-      Title of the page currently displayed: <%= yield(:page_heading || :title) %>
+      Title of the page currently displayed: <%= yield(:title) %>
     </div>
     <nav id="portal-navigation" class="inline-grid grid-cols-6 gap-4 shrink-0 ml-auto border-2 border-solid rounded-sm border-blue-400">
       <span>1</span>
