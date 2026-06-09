@@ -2,7 +2,7 @@
   <ul>
     <li class="inline"> © <%= Time.current.year %></li>
     <li class="inline"><%= link_to $Organisation, $Organisation_URL, target: "_blank" %></li>
-    <li class="inline"> - <%= $VERSION %></li>
+    <li class="inline"> - <%= $VERSION %> <%= "Built on Rails #{Rails.version}/Ruby #{RUBY_VERSION}" if Rails.env.development? %></li>
     <li class="inline"> - <%# link_to t('Help'), help_path('help.index') %></li>
     <li class="inline"> - <%# link_to t('License'), help_path('License') %></li>
   </ul>
