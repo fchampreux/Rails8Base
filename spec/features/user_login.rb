@@ -1,5 +1,7 @@
+require 'rails_helper'
+
 RSpec.describe "User Login", type: :system, js: true do
-    let!(:user) { create(:user, password: "Password123!") }
+    let!(:user) { FactoryBot.create(:user) }
   
     it "logs in successfully" do
       visit new_session_path
