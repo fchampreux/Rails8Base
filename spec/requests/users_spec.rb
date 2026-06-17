@@ -1,11 +1,14 @@
-RSpec.describe "Users API", type: :request do
-    describe "POST /users" do
-      it "creates a user" do
-        expect {
-          post "/users", params: { user: attributes_for(:user) }
-        }.to change(User, :count).by(1)
-  
-        expect(response).to have_http_status(:created)
-      end
-    end
+require 'rails_helper'
+
+RSpec.describe "Sessions", type: :request do
+  let(:user) { create(:user, password: "Password123!") }
+
+  it "authenticates the user" do
+    post session_path, params: {
+      email: user.email,
+      password: "Password123!"
+    }
+
+    expect(response).to redirect_to(dashboard_path)
   end
+end
