@@ -6,7 +6,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[8.1]
       ## User identification
       t.string :first_name,             limit: 255
       t.string :last_name,              limit: 255
-      t.string :password,              limit: 255
+      t.string :password,               limit: 255
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
