@@ -9,6 +9,7 @@ if User.none?
 
   # Default placeholder user — id forced to 0, bypasses validations intentionally
   # FK audit columns left nil: self-referential table cannot reference itself at bootstrap
+  # confirmed_at set explicitly: :confirmable would block sign-in otherwise
   User.new(
     id: 0,
     code: "unassigned",
@@ -17,6 +18,7 @@ if User.none?
     email: "unassigned@opendataquality.com",
     active_from: "2000-01-01",
     active_to: "2100-01-01",
+    confirmed_at: Time.current,
     password: admin_pass,
     password_confirmation: admin_pass
   ).save(validate: false)
@@ -31,6 +33,7 @@ if User.none?
     email: "admin@opendataquality.com",
     active_from: "2000-01-01",
     active_to: "2100-01-01",
+    confirmed_at: Time.current,
     owner_id: unassigned.id,
     created_by_id: unassigned.id,
     updated_by_id: unassigned.id,

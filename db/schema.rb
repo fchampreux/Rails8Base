@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_28_131404) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_28_163413) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
@@ -21,27 +21,41 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_28_131404) do
     t.date "active_from"
     t.date "active_to"
     t.string "code", limit: 255, default: "", null: false
+    t.datetime "confirmation_sent_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
     t.datetime "created_at", null: false
     t.integer "created_by_id"
+    t.datetime "current_sign_in_at"
+    t.string "current_sign_in_ip"
     t.json "description"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.integer "failed_attempts", default: 0, null: false
     t.string "first_name", limit: 255
     t.boolean "is_active", default: false, null: false
     t.string "last_name", limit: 255
+    t.datetime "last_sign_in_at"
+    t.string "last_sign_in_ip"
+    t.datetime "locked_at"
     t.integer "owner_id"
     t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
     t.string "reset_password_token"
+    t.integer "sign_in_count", default: 0, null: false
+    t.string "unconfirmed_email"
+    t.string "unlock_token"
     t.datetime "updated_at", null: false
     t.integer "updated_by_id"
     t.uuid "uuid", default: -> { "gen_random_uuid()" }, null: false
     t.index ["code"], name: "index_users_on_code", unique: true
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["created_by_id"], name: "index_users_on_created_by_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["is_active"], name: "index_users_on_is_active"
     t.index ["owner_id"], name: "index_users_on_owner_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
     t.index ["updated_by_id"], name: "index_users_on_updated_by_id"
     t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
