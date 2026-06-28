@@ -69,7 +69,8 @@ Always run `bin/rubocop` before committing.
 - FactoryBot for test data — factories in `spec/factories/`
 - Use `let` and `subject` for setup, `before` blocks for shared state
 - Request specs over controller specs — test the full HTTP cycle
-- System tests with Capybara for critical user flows only (login, checkout, signup)
+- System tests with Capybara + Selenium for critical user flows only (login, checkout, signup)
+- Always use Capybara + Selenium for browser-driven tests — do not use Playwright
 - Mock external services with WebMock — no real HTTP calls in tests
 
 ## Background Jobs
