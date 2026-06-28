@@ -11,7 +11,6 @@ RSpec.describe User, type: :model do
     end
 
     context "uuid" do
-      it { should validate_presence_of(:uuid) }
       it { should validate_uniqueness_of(:uuid).ignoring_case_sensitivity }
     end
 

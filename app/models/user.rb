@@ -7,6 +7,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  before_validation :assign_uuid, on: :create
   before_save :email_format
 
   belongs_to :owner,      class_name: "User", foreign_key: :owner_id,      optional: true
@@ -15,10 +16,10 @@ class User < ApplicationRecord
 
   ### validations
   validates :code,      presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
-  validates :uuid,      presence: true, uniqueness: true
+  validates :uuid,      uniqueness: true
   validates :is_active, inclusion: { in: [ true, false ] }
-  validates :email,     presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 100 }
-  validates_format_of :email, with: /\A(\S+)@(.+)\.(\S+)\z/
+  validates :email, length: { maximum: 100 }
+  validates_format_of :email, with: /\A(\S+)@(.+)\.(\S+)\z/, allow_blank: true
   validate :password_complexity
 
   scope :active,   -> { where(is_active: true) }
@@ -32,6 +33,10 @@ class User < ApplicationRecord
 
   ### private functions definitions
   private
+
+  def assign_uuid
+    self.uuid ||= SecureRandom.uuid
+  end
 
   def email_format
     self.email = email.downcase
