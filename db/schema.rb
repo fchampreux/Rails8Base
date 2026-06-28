@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_28_163413) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_10_141048) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
