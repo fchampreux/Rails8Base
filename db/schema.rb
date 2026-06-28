@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_28_105859) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_28_131404) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
@@ -27,7 +27,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_28_105859) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "first_name", limit: 255
-    t.boolean "is_active", default: true, null: false
+    t.boolean "is_active", default: false, null: false
     t.string "last_name", limit: 255
     t.integer "owner_id"
     t.datetime "remember_created_at"
@@ -39,6 +39,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_28_105859) do
     t.index ["code"], name: "index_users_on_code", unique: true
     t.index ["created_by_id"], name: "index_users_on_created_by_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["is_active"], name: "index_users_on_is_active"
     t.index ["owner_id"], name: "index_users_on_owner_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["updated_by_id"], name: "index_users_on_updated_by_id"

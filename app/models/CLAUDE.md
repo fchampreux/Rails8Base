@@ -11,7 +11,7 @@ Every model must include the following columns:
 | `owner_id`      | integer     | NOT NULL                 | yes (FK)       |
 | `created_by_id` | integer     | NOT NULL                 | yes (FK)       |
 | `updated_by_id` | integer     | NOT NULL                 | yes (FK)       |
-| `is_active`     | boolean     | NOT NULL, default: true  | no             |
+| `is_active`     | boolean     | NOT NULL, default: false | yes            |
 | `description`   | json        |                          | no             |
 
 `owner_id`, `created_by_id` and `updated_by_id` are foreign keys referencing the `users` table.
@@ -52,6 +52,38 @@ validates :is_active, inclusion: { in: [ true, false ] }
 scope :active,   -> { where(is_active: true) }
 scope :inactive, -> { where(is_active: false) }
 ```
+
+## Versioned models
+
+Add `include Versionable` to activate versioning on a model. The following columns are then required in the migration:
+
+| Column          | Type       | Constraints                | Index |
+|-----------------|------------|----------------------------|-------|
+| `version`       | string(12) | NOT NULL, default: "0.0.0" | no  |
+| `is_active`     | boolean    | NOT NULL, default: false   | yes |
+| `is_current`    | boolean    | NOT NULL, default: true    | yes |
+| `is_finalised`  | boolean    | NOT NULL, default: false   | yes |
+| `is_published`  | boolean    | NOT NULL, default: true    | yes |
+| `is_template`   | boolean    | NOT NULL, default: true    | yes |
+
+`is_active` is already required by the mandatory columns — listed here for completeness.
+
+```ruby
+t.string  :version,      limit: 12, null: false, default: "0.0.0"
+t.boolean :is_active,               null: false, default: false
+t.boolean :is_current,              null: false, default: true
+t.boolean :is_finalised,            null: false, default: false
+t.boolean :is_published,            null: false, default: true
+t.boolean :is_template,             null: false, default: true
+
+add_index :table_name, :is_active
+add_index :table_name, :is_current
+add_index :table_name, :is_finalised
+add_index :table_name, :is_published
+add_index :table_name, :is_template
+```
+
+Non-versioned models do **not** include `Versionable` — `versioned?` returns `false` via `ApplicationRecord`.
 
 ## Do NOT
 
