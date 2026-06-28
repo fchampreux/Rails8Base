@@ -14,7 +14,9 @@
       <span>2</span>
       <span>3</span>
       <span>4</span>
-      <span>5</span>
+      <%= link_to new_user_session_path, class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Se connecter", aria: { label: "Ouvrir une session" } do %>
+        <i class="fa-solid fa-right-to-bracket text-xl"></i>
+      <% end %>
       <span>6</span>
     </nav>
   </div>
