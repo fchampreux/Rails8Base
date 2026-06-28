@@ -8,6 +8,7 @@ if User.none?
   puts "Creating first users"
 
   # Default placeholder user — id forced to 0, bypasses validations intentionally
+  # FK audit columns left nil: self-referential table cannot reference itself at bootstrap
   User.new(
     id: 0,
     code: "unassigned",
@@ -16,11 +17,11 @@ if User.none?
     email: "unassigned@opendataquality.com",
     active_from: "2000-01-01",
     active_to: "2100-01-01",
-    created_by: "Rake",
-    updated_by: "Rake",
     password: admin_pass,
     password_confirmation: admin_pass
   ).save(validate: false)
+
+  unassigned = User.find(0)
 
   # Administrator
   User.new(
@@ -30,8 +31,9 @@ if User.none?
     email: "admin@opendataquality.com",
     active_from: "2000-01-01",
     active_to: "2100-01-01",
-    created_by: "Rake",
-    updated_by: "Rake",
+    owner_id: unassigned.id,
+    created_by_id: unassigned.id,
+    updated_by_id: unassigned.id,
     password: admin_pass,
     password_confirmation: admin_pass
   ).save(validate: false)

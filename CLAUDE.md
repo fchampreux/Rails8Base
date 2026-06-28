@@ -49,6 +49,7 @@ Always run `bin/rubocop` before committing.
 
 ## Database
 
+- See `app/models/CLAUDE.md` for mandatory columns and indexes required on every model
 - Migrations live in `db/migrate/` — always use `bin/rails generate migration`
 - Never edit `db/schema.rb` manually — it is auto-generated
 - Add database-level constraints (NOT NULL, unique indexes) in addition to model validations

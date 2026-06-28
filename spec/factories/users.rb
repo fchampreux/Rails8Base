@@ -7,7 +7,7 @@ FactoryBot.define do
     password    { "Password123!" }
     active_from { 1.year.ago.to_date }
     active_to   { 10.years.from_now.to_date }
-    created_by  { "RSpec" }
-    updated_by  { "RSpec" }
+    uuid        { SecureRandom.uuid }
+    is_active   { true }
   end
 end

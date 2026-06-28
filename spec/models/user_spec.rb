@@ -7,7 +7,12 @@ RSpec.describe User, type: :model do
     context "code" do
       it { should validate_presence_of(:code) }
       it { should validate_uniqueness_of(:code).case_insensitive }
-      it { should validate_length_of(:code).is_at_most(255) }
+      it { should validate_length_of(:code).is_at_most(64) }
+    end
+
+    context "uuid" do
+      it { should validate_presence_of(:uuid) }
+      it { should validate_uniqueness_of(:uuid).ignoring_case_sensitivity }
     end
 
     context "email" do
