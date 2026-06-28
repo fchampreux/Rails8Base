@@ -7,6 +7,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  attribute :is_active, :boolean, default: false
+
   before_validation :assign_uuid, on: :create
   before_save :email_format
 
