@@ -10,7 +10,6 @@ class User < ApplicationRecord
 
   attribute :is_active, :boolean, default: false
 
-  before_validation :assign_uuid, on: :create
   before_save :email_format
 
   belongs_to :owner,      class_name: "User", foreign_key: :owner_id,      optional: true
@@ -18,11 +17,13 @@ class User < ApplicationRecord
   belongs_to :updated_by, class_name: "User", foreign_key: :updated_by_id, optional: true
 
   ### validations
-  validates :code,      presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
-  validates :uuid,      uniqueness: true
-  validates :is_active, inclusion: { in: [ true, false ] }
-  validates :email, length: { maximum: 100 }
-  validates_format_of :email, with: /\A(\S+)@(.+)\.(\S+)\z/, allow_blank: true
+  validates :code,          presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
+  validates :uuid,          uniqueness: true
+  validates :owner_id,      presence: true
+  validates :created_by_id, presence: true
+  validates :updated_by_id, presence: true
+  validates :is_active,     inclusion: { in: [ true, false ] }
+  validates :email,         presence: true, length: { maximum: 100 }, format: { with: /\A(\S+)@(.+)\.(\S+)\z/ }
   validate :password_complexity
 
   scope :active,   -> { where(is_active: true) }
@@ -36,10 +37,6 @@ class User < ApplicationRecord
 
   ### private functions definitions
   private
-
-  def assign_uuid
-    self.uuid ||= SecureRandom.uuid
-  end
 
   def email_format
     self.email = email.downcase
