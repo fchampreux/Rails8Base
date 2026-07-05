@@ -12,9 +12,16 @@ class User < ApplicationRecord
 
   before_save :email_format
 
+  # User is the root of the ownership chain, so it can't require owner/created_by/updated_by
+  # to already exist like every other model does (see app/models/CLAUDE.md) — a brand new
+  # self-registering user, or the bootstrap admin, has to be able to reference itself.
+  # optional: true skips Rails' association-must-exist check; presence below still enforces
+  # that the columns are set, and the DB-level NOT NULL/FK constraints stay authoritative.
   belongs_to :owner,      class_name: "User", foreign_key: :owner_id,      optional: true
   belongs_to :created_by, class_name: "User", foreign_key: :created_by_id, optional: true
   belongs_to :updated_by, class_name: "User", foreign_key: :updated_by_id, optional: true
+
+  before_validation :self_reference_ownership, on: :create
 
   ### validations
   validates :code,          presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
@@ -40,6 +47,20 @@ class User < ApplicationRecord
 
   def email_format
     self.email = email.downcase
+  end
+
+  # Self-registration (and the seed bootstrap user) has no existing user to point to,
+  # so a brand new user owns itself. The id is reserved up front so it can be used as
+  # owner_id/created_by_id/updated_by_id before the row is actually inserted.
+  def self_reference_ownership
+    return if owner_id.present? && created_by_id.present? && updated_by_id.present?
+
+    self.id ||= self.class.connection.select_value(
+      "SELECT nextval(pg_get_serial_sequence('users', 'id'))"
+    ).to_i
+    self.owner_id      ||= id
+    self.created_by_id ||= id
+    self.updated_by_id ||= id
   end
 
   def self.find_for_database_authentication(warden_conditions)

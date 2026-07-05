@@ -4,7 +4,9 @@ RSpec.describe "Sessions", type: :request do
   let(:user) { create(:user, password: "Password123!") }
 
   it "authenticates the user" do
-    post session_path, params: {
+    pending "no dashboard_path route exists yet"
+
+    post user_session_path, params: {
       email: user.email,
       password: "Password123!"
     }

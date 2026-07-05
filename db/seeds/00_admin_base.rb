@@ -8,7 +8,7 @@ if User.none?
   puts "Creating first users"
 
   # Default placeholder user — id forced to 0, bypasses validations intentionally
-  # FK audit columns left nil: self-referential table cannot reference itself at bootstrap
+  # FK audit columns set to 0: self-referential bootstrap row references itself
   # confirmed_at set explicitly: :confirmable would block sign-in otherwise
   User.new(
     id: 0,
@@ -20,7 +20,10 @@ if User.none?
     active_to: "2100-01-01",
     confirmed_at: Time.current,
     password: admin_pass,
-    password_confirmation: admin_pass
+    password_confirmation: admin_pass,
+    owner_id: 0,
+    created_by_id: 0,
+    updated_by_id: 0
   ).save(validate: false)
 
   unassigned = User.find(0)

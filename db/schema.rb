@@ -18,36 +18,37 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_10_141048) do
   enable_extension "pgcrypto"
 
   create_table "users", id: :serial, force: :cascade do |t|
-    t.date "active_from"
-    t.date "active_to"
-    t.string "code", limit: 255, default: "", null: false
-    t.datetime "confirmation_sent_at"
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "created_at", null: false
-    t.integer "created_by_id"
-    t.datetime "current_sign_in_at"
-    t.string "current_sign_in_ip"
-    t.json "description"
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.integer "failed_attempts", default: 0, null: false
-    t.string "first_name", limit: 255
-    t.boolean "is_active", default: false, null: false
-    t.string "last_name", limit: 255
-    t.datetime "last_sign_in_at"
-    t.string "last_sign_in_ip"
-    t.datetime "locked_at"
-    t.integer "owner_id"
-    t.datetime "remember_created_at"
-    t.datetime "reset_password_sent_at"
-    t.string "reset_password_token"
-    t.integer "sign_in_count", default: 0, null: false
-    t.string "unconfirmed_email"
-    t.string "unlock_token"
-    t.datetime "updated_at", null: false
-    t.integer "updated_by_id"
-    t.uuid "uuid", default: -> { "gen_random_uuid()" }, null: false
+    t.datetime "active_from", comment: "Starting timestamp of the validity period"
+    t.datetime "active_to", comment: "Ending timestamp of the validity period"
+    t.string "code", limit: 64, default: "", null: false, comment: "User code, may be used for identification"
+    t.datetime "confirmation_sent_at", comment: "Track email confirmation expedition timestamp (Devise)"
+    t.string "confirmation_token", comment: "Check against this token for validating email confirmation (Devise)"
+    t.datetime "confirmed_at", comment: "Track email confirmation timestamp (Devise)"
+    t.datetime "created_at", null: false, comment: "Record activity trace (just as for every object)"
+    t.integer "created_by_id", null: false, comment: "Account creator id (just as for every object)"
+    t.datetime "current_sign_in_at", comment: "Trace account activity : sign-in timestamp (Devise)"
+    t.string "current_sign_in_ip", comment: "Trace account activity : sign-in IP (Devise)"
+    t.json "description", comment: "JSON field contains translated descriptions (just as for every object)"
+    t.string "email", limit: 100, default: "", null: false, comment: "User email, may be used for identification"
+    t.string "encrypted_password", default: "", null: false, comment: "User password, encrypted credential"
+    t.integer "failed_attempts", default: 0, null: false, comment: "Trace sign-in attemps count (Devise)"
+    t.string "first_name", limit: 255, comment: "User first name (informational)"
+    t.boolean "is_active", default: false, null: false, comment: "Account validity flag (just as for every object)"
+    t.string "last_name", limit: 255, comment: "User last name (informational)"
+    t.datetime "last_sign_in_at", comment: "Trace account activity : last sign-in timestamp (Devise)"
+    t.string "last_sign_in_ip", comment: "Trace account activity : last sign-in IP (Devise)"
+    t.datetime "locked_at", comment: "Track account lock timestamp (Devise)"
+    t.string "middle_name", limit: 255, comment: "User middle name or alias (informational)"
+    t.integer "owner_id", null: false, comment: "Account owner id (just as for every object)"
+    t.datetime "remember_created_at", comment: "Track when remember-me was activated (Devise)"
+    t.datetime "reset_password_sent_at", comment: "Track reset request timestamp for token expiration (Devise)"
+    t.string "reset_password_token", comment: "Check against this token for validating reset request (Devise)"
+    t.integer "sign_in_count", default: 0, null: false, comment: "Trace account activity : sign-in count (Devise)"
+    t.string "unconfirmed_email", comment: "Missing email confirmation (Devise)"
+    t.string "unlock_token", comment: "Check against this token for validating unlock request (Devise)"
+    t.datetime "updated_at", null: false, comment: "Record activity trace (just as for every object)"
+    t.integer "updated_by_id", null: false, comment: "Account editor id (just as for every object)"
+    t.uuid "uuid", default: -> { "gen_random_uuid()" }, null: false, comment: "Account uuid (for integration purpose)"
     t.index ["code"], name: "index_users_on_code", unique: true
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["created_by_id"], name: "index_users_on_created_by_id"

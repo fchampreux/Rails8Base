@@ -11,6 +11,21 @@ FactoryBot.define do
     is_active     { false }
     confirmed_at  { Time.current }
 
+    # Explicit here (rather than relying solely on User#self_reference_ownership)
+    # because shoulda-matchers' uniqueness matchers persist the built record via
+    # save(validate: false), which skips before_validation callbacks entirely.
+    after(:build) do |user|
+      next if user.owner_id.present? && user.created_by_id.present? && user.updated_by_id.present?
+
+      reserved_id = ActiveRecord::Base.connection.select_value(
+        "SELECT nextval(pg_get_serial_sequence('users', 'id'))"
+      ).to_i
+      user.id            ||= reserved_id
+      user.owner_id      ||= reserved_id
+      user.created_by_id ||= reserved_id
+      user.updated_by_id ||= reserved_id
+    end
+
     trait :unconfirmed do
       confirmed_at { nil }
     end
