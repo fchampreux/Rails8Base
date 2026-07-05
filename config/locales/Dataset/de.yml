@@ -1,0 +1,57 @@
+# Code for language as declared in i18n configuration
+de:
+  Datasets:                            "Datasets"
+  Dataset:                             "Dataset"
+  ManagingDatasets:                    "Datasets verwalten"
+  NewDataset:                          "Neuer Dataset"
+  DatasetRejected:                     "Dataset wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  datasets:
+    index:
+      # Columns titles
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      Parent:                                  "Informationfeld"
+      Owner:                                   "Eigentümer"
+      UpdatedBy:                               "Aktualisiert von"
+      UpdatedAt:                               "Aktualisiert am"
+    show:
+      Manage:                                 "Dataset verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Export:                                 "Exportieren"
+      TranslateInExcel:                       "Übersetzen in Excel"
+      ImportTranslations:                     "Importübersetzung"
+      ImportVariables:                        "Attribute importieren"
+      Granularity:                            "Granularität"
+      Period:                                 "Periode"
+      Participants:                           "Teilnehmer"
+      OgdOptions:                             "Offene Daten"
+    new:
+      New:                                    "Neuer Dataset"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+    edit:
+      Edit:                                   "Dataset bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+    create:
+      Success:                             	  "erfolgreich erstellt Dataset"
+      Failure:                                "Dataset konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Dataset"
+      Failure:                                "Dataset konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Dataset erfolgreich wiederhergestellt"
+      Failure:                                "Dataset konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Dataset erfolgreich gelöscht"
+      Failure:                                "Dataset konnte nicht gelöscht werden"

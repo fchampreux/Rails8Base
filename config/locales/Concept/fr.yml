@@ -1,0 +1,63 @@
+fr:
+  Concepts:                                    "Concepts"
+  Concept:                                     "Concept"
+  ManagingConcepts:                            "Gérer les concepts"
+  NewConcept:                                  "Nouveau concept"
+  ConceptRejected:                             "Le concept a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  concepts:
+    show:
+      Manage:                                  "Gérer les concepts"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ExternalDescription:                     "Decription publiée"
+      Annotations:                             "Annotations"
+      ValueDomain:                             "Domaine de valeurs"
+      Classification:                          "Classification"
+      DataType:                                "Type de donnée"
+      VariableRole:                            "Rôle"
+      AggregationMethod:                       "Aggrégation"
+      VariableSize:                            "Longueur"
+      VariablePrecision:                       "Précision"
+    new:
+      New:                                     "Nouveau concept"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ExternalDescription:                     "Decription publiée"
+      Annotations:                             "Annotations"
+      ValueDomain:                             "Domaine de valeurs"
+      Classification:                          "Classification"
+      DataType:                                "Type de donnée"
+      VariableRole:                            "Rôle"
+      AggregationMethod:                       "Aggrégation"
+      VariableSize:                            "Longueur"
+      VariablePrecision:                       "Précision"
+    edit:
+      Edit:                                    "Modifier le concept"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ExternalDescription:                     "Decription publiée"
+      Annotations:                             "Annotations"
+      ValueDomain:                             "Domaine de valeurs"
+      Classification:                          "Classification"
+      DataType:                                "Type de donnée"
+      VariableRole:                            "Rôle"
+      AggregationMethod:                       "Aggrégation"
+      VariableSize:                            "Longueur"
+      VariablePrecision:                       "Précision"
+    create:
+      Success:                                 "Le concept a été créé"
+      Failure:                                 "Le concept ne peut être créé"
+    update:
+      Success:                                 "Le concept a été modifié"
+      Failure:                                 "Le concept ne peut être modifié"
+    destroy:
+      Success:                                 "Le concept a été supprimé"
+      Failure:                                 "Le concept ne peut être supprimé"

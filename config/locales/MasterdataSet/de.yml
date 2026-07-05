@@ -1,0 +1,100 @@
+# Code for language as declared in i18n configuration
+de:
+  MasterdataSets:                                "Masterdata"
+  MasterdataSet:                                 "Masterdata"
+  ManagingMasterdataSets:                        "Masterdata verwalten"
+  NewMasterdataSet:                              "Neuer Masterdata"
+  MasterdataSetRejected:                         "Masterdata wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  masterdata_sets:
+    index:
+      # Columns titles
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      Parent:                                  "Informationfeld"
+      Owner:                                   "Eigentümer"
+      UpdatedBy:                               "Aktualisiert von"
+      UpdatedAt:                               "Aktualisiert am"
+    show:
+      Manage:                                 "Masterdata verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      ActiveFrom:                             "Aktiv von"
+      ActiveTo:                               "bis"
+      SDMXResource:                           "SDMX-Ressourcen-URL"
+      SDMXResourceDefinition:                 "Diese Ressource definiert eine URL zu einem SDMX-Webdienst, von dem definierte Variablen (Konzepte) auf der Grundlage der Bezeichnerliste importiert oder aktualisiert werden. Wenn die Liste leer ist, werden alle Ressourcenvariablen berücksichtigt."
+      Resource:                               "Ressource"
+      ValuesType:                             "Nutzung der Ressource"
+      DataType:                               "Datentyp des Codes"
+      CodeMaxLength:                          "Länge des Codes"     
+      Show:                                   "Zeigen"
+      Edit:                                   "Bearbeiten"
+      Delete:                                 "Löschen" 
+    new:
+      New:                                    "Neuer Masterdata"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      ActiveFrom:                             "Aktiv von"
+      ActiveTo:                               "bis"
+      SDMXResource:                           "SDMX-Ressourcen-URL"
+      SDMXResourceDefinition:                 "Diese Ressource definiert eine URL zu einem SDMX-Webdienst, von dem definierte Variablen (Konzepte) auf der Grundlage der Bezeichnerliste importiert oder aktualisiert werden. Wenn die Liste leer ist, werden alle Ressourcenvariablen berücksichtigt."
+      Resource:                               "Ressource"
+      ValuesType:                             "Nutzung der Ressource"
+      DataType:                               "Datentyp des Codes"
+      CodeMaxLength:                          "Länge des Codes"
+    edit:
+      Edit:                                   "Masterdata bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      ActiveFrom:                             "Aktiv von"
+      ActiveTo:                               "bis"
+      SDMXResource:                           "SDMX-Ressourcen-URL"
+      SDMXResourceDefinition:                 "Diese Ressource definiert eine URL zu einem SDMX-Webdienst, von dem definierte Variablen (Konzepte) auf der Grundlage der Bezeichnerliste importiert oder aktualisiert werden. Wenn die Liste leer ist, werden alle Ressourcenvariablen berücksichtigt."
+      Resource:                               "Ressource"
+      ValuesType:                             "Nutzung der Ressource"
+      DataType:                               "Datentyp des Codes"
+      CodeMaxLength:                          "Länge des Codes"      
+    new_version:
+      Success:                                "Erfolgreich erstellte Code-Liste"
+      Failure:                                "Die Liste konnte nicht erstellt werden"
+    make_current:
+      Success:                                " Masterdata erfolgreich ausgewählt"
+      Failure:                                " Masterdata konnte nicht ausgewählt werden"
+    finalise:
+      Success:                                "Masterdata-Version erfolgreich abgeschlossen"
+      Failure:                                 "Die Version der Masterdata konnte nicht fertiggestellt werden"
+    create:
+      Success:                             	  "erfolgreich erstellt Masterdata"
+      Failure:                                " Masterdata konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Inform Masterdataationfeld"
+      Failure:                                " Masterdata konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  " Masterdata erfolgreich wiederhergestellt"
+      Failure:                                " Masterdata konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  " Masterdata erfolgreich gelöscht"
+      Failure:                                " Masterdata konnte nicht gelöscht werden"
+    propose:
+      Success:                                "Die Masterdata wurde vorgeschlagen."
+      Failure:                                " Masterdata können nicht geändert werden"
+    accept:
+      Success:                                "Die Masterdata wurde angenommen."
+      Failure:                                " Masterdata können nicht geändert werden"
+    reopen:
+      Success:                                "Die Masterdata wurde geöffnet ."
+      Failure:                                " Masterdata können nicht geändert werden"
+    release:
+      Success:                                "Die Masterdata wurde freigegeben ."
+      Failure:                                " Masterdata können nicht geändert werden"
+    reject:
+      Success:                                "Die Masterdata wurde verworfen ."
+      Failure:                                " Masterdata können nicht geändert werden"

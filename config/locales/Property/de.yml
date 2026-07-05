@@ -1,0 +1,63 @@
+de:
+  Properties:                                 "Attribute"
+  Property:                                   "Attribut"
+  ManagingProperties:                         "Attribute verwalten"
+  NewProperty:                                "Neuer Attribut"
+  PropertyRejected:                           "Attribut wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  properties:
+    show:
+      Manage:                                  "Attribute verwalten"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    new:
+      New:                                     "Neues Attribut"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    edit:
+      Edit:                                    "Attribut bearbeiten"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    create:
+      Success:                                 "Das Attribut wurde erstellt"
+      Failure:                                 "Das Attribut kann nicht erstellt werden"
+    update:
+      Success:                                 "Das Attribut wurde geändert"
+      Failure:                                 "Das Attribut kann nicht geändert werden"
+    destroy:
+      Success:                                 "Das Attribut wurde gelöscht"
+      Failure:                                 "Das Attribut kann nicht gelöscht werden"

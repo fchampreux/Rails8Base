@@ -1,0 +1,74 @@
+# Code for language as declared in i18n configuration
+de:
+  # Considered object from a global view
+  DataProcesses:                              "Datenflussen"
+  DataProcess:                               "Datenfluss"
+  ManagingDataProcesses:                      "Datenflussen verwalten"
+  NewDataProcess:                            "Neuer Datenfluss"
+  DataProcessRejected:                       "Datenfluss wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageDataProcess )
+  data_processes:
+    index:
+      # Columns titles
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Owner:                                  "Eigentümer"
+      UpdatedBy:                              "Aktualisiert von"
+      UpdatedAt:                              "Aktualisiert am"
+    show:
+      Manage:                                 "Datenfluss verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      GSBPM:                                  "GSBPM Prozess"
+      TargetObject:                           "Ziel"
+      SourceObject:                           "Quelle"
+      # Datatables headers
+      Parameters:                             "Parameter"
+      ParamName:                              "Name"
+      ParamType:                              "Typ"
+      ParamValue:                             "Wert"
+      ParamIsMandatory:                       "obligatorisch"
+      TemplateOn:                             "Ausgewählte Vorlage"
+      NodeType:                               "Knoten Typ"
+      New:                                    "Neue Aufgabe"
+      Overview:                               "Überblick"
+    new:
+      New:                                    "Neuer Datenfluss"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      CreateDataProcess:                      "Einen neuen Unterprozess erstellen"
+      DataProcessTemplate:                    "Eine Vorlage auswählen"
+      Technology:                             "Technologie"
+      Options:                                "Optionen"
+      Template:                               "Zur Verwendung als Vorlage"
+      NoTemplate:                             "Weiß - Erstellen eines leeren Unterprozesses"
+      BasicTemplate:                          "Minimum - Erstellen eines Unterprozesses mit den Aufgaben START, RESCUE, END"
+      SpecificTemplate:                       "Strategie - Verwende eine definierte Strategie für die gewählte Technologie"
+    edit:
+      Edit:                                   "Datenfluss bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      TargetObject:                           "Ziel"
+      SourceObject:                           "Quelle"
+      SelectZone:                             "Wählen Sie eine Zone aus"
+      GSBPM:                                  "GSBPM Prozess"
+    create:
+      Success:                             	  "erfolgreich erstellt Datenfluss"
+      Failure:                                "Datenfluss konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Datenfluss"
+      Failure:                                "Datenfluss konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Datenfluss erfolgreich wiederhergestellt"
+      Failure:                                "Datenfluss konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Datenfluss erfolgreich gelöscht"
+      Failure:                                "Datenfluss konnte nicht gelöscht werden"

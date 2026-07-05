@@ -1,0 +1,66 @@
+# Code for language as declared in i18n configuration
+fr:
+  Connections:                                 "Connexions"
+  Connection:                                  "Connexion"
+  ManagingConnections:                         "Gérer les connexions"
+  NewConnection:                               "Nouvelle connexion"
+  ConnectionRejected:                          "La connexion a été rejetée"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  administration:
+    connections:
+      index:
+        # Columns titles
+        Code:                                    "Identifiant"
+        Name:                                    "Nom"
+        Description:                             "Description"
+        Parent:                                  "Business area"
+        Owner:                                   "Responsable"
+        UpdatedBy:                               "Mis à jour par"
+        UpdatedAt:                               "Mis à jour le"
+      show:
+        Connection:                              "Connexion"
+        Connections:                             "Connexion"
+        ImportConnections:                       "Importer"
+        # Field names
+        Code:                                    "Identifiant"
+        Name:                                    "Nom"
+        Description:                             "Description"
+        Property:                                "Propriété"
+        TaskScope:                               "Applicabilité"
+        ValidFrom:                               "Valable de"
+        ValidTo:                                 "à"
+        Sure:                                    "Vous confirmez ?"
+      new:
+        Connections:                             "Connexions"
+        ImportConnections:                       "Importer"
+        New:                                     "Nouvelle connexion"
+        # Field names
+        Code:                                    "Identifiant"
+        Name:                                    "Nom"
+        Description:                             "Description"
+        Property:                                "Propriété"
+        TaskScope:                               "Applicabilité"
+        ValidFrom:                               "Valable de"
+        ValidTo:                                 "à"
+      edit:
+        Connections:                             "Connexions"
+        ImportConnections:                       "Importer"
+        Edit:                                    "Modifier la connexion"
+        # Field names
+        Code:                                    "Identifiant"
+        Name:                                    "Nom"
+        Description:                             "Description"
+        Property:                                "Propriété"
+        TaskScope:                               "Applicabilité"
+        ValidFrom:                               "Valable de"
+        ValidTo:                                 "à"
+      create:
+        Success:                             	   "Nouvelle connexions créée"
+        Failure:                                 "La nouvelle connexion ne peut pas être créée"
+      update:
+        Success:                             	   "Liste de connexions modifiée"
+        Failure:                                 "La connexion ne peut pas être modifiée"
+      destroy:
+        Success:                              	 "Connexion supprimée"
+        Failure:                                 "La connexion ne peut pas être supprimée"

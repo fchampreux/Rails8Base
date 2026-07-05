@@ -1,0 +1,65 @@
+# Code for language as declared in i18n configuration
+en:
+  Datasets:                            "Datasets"
+  Dataset:                             "Dataset"
+  ManagingDatasets:                    "Manage datasets"
+  NewDataset:                          "New dataset"
+  DatasetRejected:                     "Dataset rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  datasets:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Parent:                                 "Data process"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage dataset"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Export:                                 "Export"
+      TranslateInExcel:                       "Translate in Excel"
+      ImportTranslations:                     "Import transaltions"
+      ImportVariables:                        "Import attributes"
+      Granularity:                            "Granularity"
+      Period:                                 "Periode"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    new:
+      New:                                    "New dataset"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Granularity:                            "Granularity"
+      Period:                                 "Periode"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    edit:
+      Edit:                                   "Edit dataset"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Granularity:                            "Granularity"
+      Period:                                 "Period"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    create:
+      Success:                             	  "Dataset was created"
+      Failure:                                "Dataset cannot be created"
+    update:
+      Success:                             	  "Dataset was updated"
+      Failure:                                "Dataset cannot be updated"
+    activate:
+      Success:                             	  "Dataset was recovered"
+      Failure:                                "Dataset cannot be recovered"
+    destroy:
+      Success:                             	  "Dataset was deleted"
+      Failure:                                "Dataset cannot be deleted"

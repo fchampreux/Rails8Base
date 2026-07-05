@@ -1,0 +1,70 @@
+# Code for language as declared in i18n configuration
+en:
+  Navigation:
+    Applications:
+      Governance:                             "Governance"
+      Metadata:                               "Metadata"
+      Scheduler:                              "Scheduler"
+      Administration:                         "Configuration"
+      #Translation:
+      User:                                   "User"
+      SignOut:                                "Sign out"
+      SignIn:                                 "Sign in"
+      Help:                                   "Help"
+      HomePage:                               "Home"
+      Parent:                                 "Parent"
+    Menu:
+      Playgrounds:                            "Entities"
+      BusinessHierarchy:                      "Entités"
+      BusinessAreas:                          "Business areas"
+      BusinessFlows:                          "Business flows"
+      BusinessProcesses:                      "Business Processes"
+      Collections:                            "Concept collections"
+      MasterdataSets:                         "Masterdata"                         
+      Classifications:                        "Classifications"
+      #Concepts:                               "Concepts"
+      Structures:                             "Structures"
+      Datasets:                               "Datasets"
+      #Properties:                              "Variables"
+      DataProcesses:                          "Data processing"
+      BusinessRules:                          "Plausibilisation"
+    Interaction:
+      Translations:                           "Translations"
+      #TranslationsOn:                         "See translations"
+      #TranslationsOff:                        "Hide translations"
+      ViewAll:                                "See all"
+      ViewMine:                               "Essential"
+      Create:                                 "Create"
+      Edit:                                   "Edit"
+      Submit:                                 "Validate"
+      Cancel:                                 "Cancel"
+      Delete:                                 "Delete"
+      Recall:                                 "Recover"
+      # Workflow
+      Propose:                                "Propose"
+      Accept:                                 "Accept" 
+      Reject:                                 "Reject" 
+      Reopen:                                 "Reopen"
+      # Lists
+      Import:                                 "Import"
+      Export:                                 "Export"
+      AddRow:                                 "Add"
+      RemoveRow:                              "Remove"
+      # Version management
+      NewVersion:                             "New version"
+      MakeCurrent:                            "Select"
+      Finalise:                               "Finalise"
+      # Shopping Cart
+      OpenSelection:                          "Open"
+      CloseSelection:                         "Close"
+      Add:                                    "Add"
+      InstancesCount:                         "Number"
+      BackTo:                                 "Back to "
+      ToApprove:                              "To approve"
+      ToApproveMessage:                       "To approve"
+      Success:                                "Attribute added"
+      # Search
+      Search:                                 "Find"
+    Details:
+      ShowDetails:                           "Details"
+      TechnicalDetails:                      "Technical details"

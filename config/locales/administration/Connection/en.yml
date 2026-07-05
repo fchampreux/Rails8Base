@@ -1,0 +1,68 @@
+# Code for language as declared in i18n configuration
+en:
+  Connections:                                "Connections list"
+  Connection:                                 "Connection"
+  ManagingConnections:                        "Manage connections"
+  NewConnection:                              "New connection"
+  ConnectionRejected:                         "Connections list was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  administration:
+    connections:
+      index:
+        # Columns titles
+        Code:                                   "Identifier"
+        Name:                                   "Name"
+        Description:                            "Description"
+        Parent:                                 "Business area"
+        Owner:                                  "Owner"
+        UpdatedBy:                              "Updated by"
+        UpdatedAt:                              "Updated at"
+      show:
+        Connections:                            "Connections list"
+        Connection:                             "Connections"
+        ImportConnections:                      "Import"
+        # Field names
+        Code:                                   "Identifier"
+        Name:                                   "Name"
+        Description:                            "Description"
+        Property:                               "Property"
+        TaskScope:                              "Applicability"
+        ValidFrom:                               "Valid from"
+        ValidTo:                                 "to"
+        Sure:                                    "Do you confirm?"
+      new:
+        Connections:                            "Connections list"
+        Connection:                             "Connections"
+        ImportConnections:                      "Import"
+        New:                                    "New connections list"
+        # Field names
+        Code:                                   "Identifier"
+        Name:                                   "Name"
+        Description:                            "Description"
+        Property:                               "Property"
+        TaskScope:                              "Applicability"
+        ValidFrom:                               "Valid from"
+        ValidTo:                                 "to"
+      edit:
+        Connections:                            "Connections list"
+        Connection:                             "Connections"
+        ImportConnections:                      "Import"
+        Edit:                                   "Edit connections list"
+        # Field names
+        Code:                                   "Identifier"
+        Name:                                   "Name"
+        Description:                            "Description"
+        Property:                               "Property"
+        TaskScope:                              "Applicability"
+        ValidFrom:                               "Valid from"
+        ValidTo:                                 "to"
+      create:
+        Success:                             	  "Connections list was created"
+        Failure:                                "Connections list cannot be created"
+      update:
+        Success:                             	  "Connections list was updated"
+        Failure:                                "Connections list cannot be updated"
+      destroy:
+        Success:                             	  "Connections list was deleted"
+        Failure:                                "Connections list cannot be deleted"

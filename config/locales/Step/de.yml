@@ -1,0 +1,82 @@
+# Code for language as declared in i18n configuration
+de:
+  # Considered object from a global view
+  Steps:                              "Bearbeitungen"
+  Step:                               "Bearbeitung"
+  ManagingSteps:                      "Bearbeitungen verwalten"
+  NewStep:                            "Neuer Bearbeitung"
+  StepRejected:                       "Bearbeitung wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageStep )
+  steps:
+    index:
+      # Columns titles
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Owner:                                  "Eigentümer"
+      UpdatedBy:                              "Aktualisiert von"
+      UpdatedAt:                              "Aktualisiert am"
+    show:
+      Manage:                                 "Bearbeitung verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      IsSynchronus:                           "Synchronisation"
+      IsTemplate:                             "Ist eine Vorlage"
+      Template:                               "Zur Verwendung als Vorlage"
+      NoTemplate:                             "Keine Vorlage"
+      TemplateOn:                             "Ausgewählte Vorlage"
+      TemplateDefinition:                     "Eine Verarbeitungsvorlage kann auf verschiedene Strukturen angewendet werden, um die gleiche Verarbeitung durchzuführen."
+      OrderingSequence:                       "Sequence"
+      Synchronus:                             "Synchronous"
+      Asynchronus:                            "Asynchronous"
+      SynchronicityOn:                        "Wartet auf den Beginn der übergeordneten Bearbeitungen"
+      SynchronicityOff:                       "Startet, sobald sie durch eine übergeordnete Bearbeitung aktiviert wird"
+      NextSuccess:                            "Weiter, wenn erfolgreich"
+      NextFailure:                            "Weiter, wenn gescheitert"
+      Parameters:                             "Einstellungen"
+      Technology:                             "Technologie"
+      TargetObject:                           "Ziel"
+      SourceObject:                           "Quelle"
+      NodeType:                               "Knoten Typ"
+      New:                                    "Neue Aufgabe"
+      UpdatedBy:                              "Aktualisiert von"
+      UpdatedAt:                              "Aktualisiert am"
+      GSBPM:                                  "GSBPM Subprozess"
+      Show:                                   "Anzeigen"
+      Edit:                                   "Bearbeiten"
+      Delete:                                 "Löschen"
+    new:
+      New:                                    "Neuer Bearbeitung"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      CreateStep:                         "Einen neuen Unterprozess erstellen"
+      StepTemplate:                       "Eine Vorlage auswählen"
+      Technology:                             "Technologie"
+      Options:                                "Optionen"
+      Template:                               "Zur Verwendung als Vorlage"
+      NoTemplate:                             "Weiß - Erstellen eines leeren Unterprozesses"
+      BasicTemplate:                          "Minimum - Erstellen eines Unterprozesses mit den Aufgaben START, RESCUE, END"
+      SpecificTemplate:                       "Strategie - Verwende eine definierte Strategie für die gewählte Technologie"
+    edit:
+      Edit:                                   "Bearbeitung bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+    create:
+      Success:                             	  "erfolgreich erstellt Bearbeitung"
+      Failure:                                "Bearbeitung konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Bearbeitung"
+      Failure:                                "Bearbeitung konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Bearbeitung erfolgreich wiederhergestellt"
+      Failure:                                "Bearbeitung konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Bearbeitung erfolgreich gelöscht"
+      Failure:                                "Bearbeitung konnte nicht gelöscht werden"

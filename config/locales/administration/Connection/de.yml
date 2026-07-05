@@ -1,0 +1,68 @@
+# Code for language as declared in i18n configuration
+de:
+  Connections:                                 "Verbindungliste"
+  Connection:                                  "Verbindung"
+  ManagingConnections:                         "Verbindunglisten verwalten"
+  NewConnection:                               "Neuer Verbindungliste"
+  ConnectionRejected:                          "Verbindungliste wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  administration:
+    connections:
+      index:
+        # Columns titles
+        Code:                                    "Kennung"
+        Name:                                    "Name"
+        Description:                             "Beschreibung"
+        Parent:                                  "Informationfeld"
+        Owner:                                   "Eigentümer"
+        UpdatedBy:                               "Aktualisiert von"
+        UpdatedAt:                               "Aktualisiert am"
+      show:
+        Connections:                             "Verbindungliste"
+        Connection:                              "Verbindung"
+        ImportConnections:                       "Importieren"
+        # Field names
+        Code:                                    "Kennung"
+        Name:                                    "Name"
+        Description:                             "Beschreibung"
+        Property:                                "Eigentum"
+        TaskScope:                               "Anwendbarkeit"
+        ValidFrom:                               "Gültig von"
+        ValidTo:                                 "bis"
+        Sure:                                    "Bestätigen Sie?"
+      new:
+        Connections:                             "Verbindungliste"
+        Connection:                              "Verbindung"
+        ImportConnections:                       "Importieren"
+        New:                                     "Neuer Verbindungliste"
+        # Field names
+        Code:                                    "Kennung"
+        Name:                                    "Name"
+        Description:                             "Beschreibung"
+        Property:                                "Eigentum"
+        TaskScope:                               "Anwendbarkeit"
+        ValidFrom:                               "Gültig von"
+        ValidTo:                                 "bis"
+      edit:
+        Connections:                             "Verbindungliste"
+        Connection:                              "Verbindung"
+        ImportConnections:                       "Importieren"
+        Edit:                                    "Verbindungliste bearbeiten"
+        # Field names
+        Code:                                    "Kennung"
+        Name:                                    "Name"
+        Description:                             "Beschreibung"
+        Property:                                "Eigentum"
+        TaskScope:                               "Anwendbarkeit"
+        ValidFrom:                               "Gültig von"
+        ValidTo:                                 "bis"
+      create:
+        Success:                              	  "erfolgreich erstellt Verbindungliste"
+        Failure:                                 "Verbindungliste konnte nicht erstellt werden"
+      update:
+        Success:                              	  "erfolgreich aktualisierter Verbindungliste"
+        Failure:                                 "Verbindungliste konnte nicht aktualisierter werden"
+      destroy:
+        Success:                              	  "Verbindungliste erfolgreich gelöscht"
+        Failure:                                 "Verbindungliste konnte nicht gelöscht werden"

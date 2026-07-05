@@ -1,0 +1,96 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  Users:                                     "Utilisateurs"
+  User:                                      "Utilisateur"
+  ManagingUsers:                             "Gérer les utilisateurs"
+  NewUser:                                   "Nouvel utilisateur"
+  UserRejected:                              "L'utilisateur a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageUser )
+  administration:
+    users:
+      index:
+        # Columns titles
+        CalculatedStatus:                       "Statut"
+        UserName:                               "Login"
+        Name:                                   "Nom"
+        MainGroup:                              "Groupe principal"
+        ActivityStatus:                         "Statut"
+        Description:                            "Description"
+        Owner:                                  "Responsable"
+        UpdatedBy:                              "Mis à jour par"
+        UpdatedAt:                              "Mis à jour le"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Valide du"
+        ActiveTo:                               "au"
+      show:
+        AccountData:                            "Données du compte"
+        PersonalData:                           "Données personnelles"
+        AuthorisationData:                      "Autorisations"
+        # Field names
+        FirstName:                              "Prénom"
+        LastName:                               "Nom"
+        Email:                                  "Adresse e-mail"
+        Description:                            "Description"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Valide du"
+        ActiveTo:                               "au"
+        ActivityStatus:                         "Statut"
+        Language:                               "Langue"
+        IsAdmin:                                "Administrateur"
+        UserRoles:                              "Rôles natifs"
+        ExternalRoles:                          "Rôles importés"
+        ExternalDirectory:                      "Identifiant externe"
+        PreferredBusinessFlows:                 "Flux métiers"
+        ChangeMyPassword:                       "Modifier mon mot de passe"
+        Groups:                                 "Groupes"
+        RYes:                                    "Oui"
+        RNo:                                     "Non"
+      new:         
+        AccountData:                            "Données du compte"
+        PersonalData:                           "Données personnelles"                           
+        # Field names
+        FirstName:                              "Prénom"
+        LastName:                               "Nom"
+        Email:                                  "Adresse e-mail"
+        Description:                            "Description"
+        Organisation:                           "Organisation"
+        ActiveFrom:                              "Valide du"
+        ActiveTo:                                "au"
+        Language:                               "Langue"
+      edit:
+        AccountData:                            "Données du compte"
+        PersonalData:                           "Données personnelles"
+        # Field names
+        FirstName:                              "Prénom"
+        LastName:                               "Nom"
+        Email:                                  "Adresse e-mail"
+        UserName:                               "Login"
+        Description:                            "Description"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Valide du"
+        ActiveTo:                               "au"
+        Language:                               "Langue"
+        IsAdmin:                                "Administrateur"
+        Password:                               "Mot de passe"
+        Confirmation:                           "Confirmation"
+        UserRoles:                              "Rôles natifs"
+        ExternalRoles:                          "Rôles importés"
+        PreferredBusinessFlows:                 "Flux métiers"
+        ChangeMyPassword:                       "Modifier mon mot de passe"
+        Groups:                                 "Groupes"
+        CurrentPassword:                        "Mot de passe actuel"
+        Info:                                   "(Nous avons besoin de votre mot de passe actuel pour enregistrer un nouveau mot de passe)."
+      create:
+        Success:                             	  "Utilisateur créé avec succès"
+        Failure:                             	  "L'utilisateur ne peut pas être créé"
+      update:
+        Success:                             	  "Utilisateur mis à jour avec succès"
+        Failure:                             	  "L'utilisateur ne peut pas être modifié"
+      activate:
+        Success:                             	  "Utilisateur récupéré"
+        Failure:                             	  "L'utilisateur ne peut pas être récupéré"
+      destroy:
+        Success:                             	  "Utilisateur supprimé"
+        Failure:                             	  "L'utilisateur ne peut pas être supprimé"

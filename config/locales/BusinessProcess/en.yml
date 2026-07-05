@@ -1,0 +1,61 @@
+# Code for language as declared in i18n configuration
+en:
+  # Considered object from a global view
+  BusinessProcesses:                             "Business processes"
+  BusinessProcess:                               "Business process"
+  ManagingBusinessProcesses:                     "Managing Business processes"
+  NewBusinessProcess:                            "New Business process"
+  BusinessProcessRejected:                       "Business process was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessProcess )
+  business_processes:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage Business processes"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Participants:                           "Involved organisations"
+    new:
+      New:                                    "New Business process"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Participants:                           "Involved organisations"
+    edit:
+      Edit:                                   "Edit the Business process"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Participants:                           "Involved organisations"
+    create:
+      Success:                             	  "Business process was created"
+      Failure:                             	  "Business process cannot be created"
+    update:
+      Success:                             	  "Business process was updated"
+      Failure:                             	  "Business process cannot be updated"
+    activate:
+      Success:                             	  "Business process recovered"
+      Failure:                             	  "Business process cannot be recovered"
+    destroy:
+      Success:                             	  "Business process deleted"
+      Failure:                             	  "Business process cannot be deleted"
+    make_current:
+      Success:                                "Business process selected"
+      Failure:                                "Business process cannot be selected"
+    new_version:
+      Success:                                "New version created"
+      Failure:                                "A new version cannot be created"
+    finalize:
+      Success:                                "Business process finalized"
+      Failure:                                "Business process cannot be finalised"

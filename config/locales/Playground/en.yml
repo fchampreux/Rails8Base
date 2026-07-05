@@ -1,0 +1,51 @@
+# Code for language as declared in i18n configuration
+en:
+  # Considered object from a global view
+  Playgrounds:                              "Entities"
+  Playground:                               "Entity"
+  ManagingPlaygrounds:                      "Managing Entities"
+  NewPlayground:                            "New Entity"
+  PlaygroundRejected:                       "Entity was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessFlow )
+  playgrounds:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+      # Button
+      Select:                                 "Select"
+    show:
+      Manage:                                 "Manage Entities"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+    new:
+      New:                                    "New Entity"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+    edit:
+      Edit:                                   "Edit the Entity"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+    create:
+      Success:                             	  "Entity was created"
+      Failure:                             	  "Entity cannot be created"
+    update:
+      Success:                             	  "Entity was updated"
+      Failure:                             	  "Entity cannot be updated"
+    activate:
+      Success:                             	  "Entity recovered"
+      Failure:                             	  "Entity cannot be recovered"
+    destroy:
+      Success:                             	  "Entity deleted"
+      Failure:                             	  "Entity cannot be deleted"

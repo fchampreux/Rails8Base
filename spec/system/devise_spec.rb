@@ -23,12 +23,12 @@ RSpec.describe "Devise", type: :system do
     context "avec des identifiants invalides" do
       it "affiche une erreur sur mot de passe incorrect" do
         sign_in_via_form(user.email, "mauvais_mdp")
-        expect(page).to have_content("Invalid")
+        expect(page).to have_content("incorrect")
       end
 
       it "affiche une erreur sur email inconnu" do
         sign_in_via_form("inconnu@example.com", password)
-        expect(page).to have_content("Invalid")
+        expect(page).to have_content("Email ou mot de passe")
       end
     end
   end
@@ -51,7 +51,7 @@ RSpec.describe "Devise", type: :system do
 
       it "bloque la connexion et demande la confirmation" do
         sign_in_via_form(unconfirmed.email, password)
-        expect(page).to have_content("confirm your email address")
+        expect(page).to have_content("valider votre compte")
       end
     end
   end
@@ -93,7 +93,7 @@ RSpec.describe "Devise", type: :system do
   describe "Lockable" do
     it "verrouille le compte après 5 tentatives échouées" do
       5.times { sign_in_via_form(user.email, "mauvais_mdp") }
-      expect(page).to have_content("locked")
+      expect(page).to have_content("verrouillé")
     end
   end
 

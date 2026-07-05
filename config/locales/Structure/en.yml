@@ -1,0 +1,88 @@
+# Code for language as declared in i18n configuration
+en:
+  Structures:                            "Structures"
+  Structure:                             "Structure"
+  ManagingStructures:                    "Manage structures"
+  NewStructure:                          "New structure"
+  StructureRejected:                     "Structure rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  structures:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Parent:                                 "Data process"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage structure"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Export:                                 "Export"
+      TranslateInExcel:                       "Translate in Excel"
+      ImportTranslations:                     "Import transaltions"
+      ImportVariables:                        "Import attributes"
+      Granularity:                            "Granularity"
+      Period:                                 "Periode"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+      Show:                                   "Show"
+      Edit:                                   "Edit"
+      Delete:                                 "Delete"
+    new:
+      New:                                    "New structure"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Granularity:                            "Granularity"
+      Period:                                 "Periode"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    open_cart:
+      Success:                                "Structure successfully opened"
+    close_cart:
+      Success:                                "Structure closed successfully"
+    edit:
+      Failure:                                "Finalised structure can't be modified"
+      Edit:                                   "Edit structure"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Granularity:                            "Granularity"
+      Period:                                 "Period"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    new_version:
+      Success:                                "New version created"
+      Failure:                                "A new version cannot be created"
+    make_current:
+      Success:                                "Current version is selected"
+      Failure:                                "This version cannot be selected"
+    finalise:
+      Success:                                "Structure has been finalised"
+      Failure:                                "Structure cannot be finalised"
+    create:
+      Success:                             	  "Structure was created"
+      Failure:                                "Structure cannot be created"
+    update:
+      Success:                             	  "Structure was updated"
+      Failure:                                "Structure cannot be updated"
+    activate:
+      Success:                             	  "Structure was recovered"
+      Failure:                                "Structure cannot be recovered"
+    destroy:
+      Success:                             	  "Structure was deleted"
+      Failure:                                "Structure cannot be deleted"
+    propose:
+      Success:                                "Structure is waiting for approval"
+      Failure:                                "Structure cannot be submitted"
+    accept:
+      Success:                                "Structure has been accepted"
+      Failure:                                "Structure cannot change status"

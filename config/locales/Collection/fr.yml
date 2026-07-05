@@ -1,0 +1,85 @@
+# Code for language as declared in i18n configuration
+fr:
+  Collections:                            "Collections de concepts"
+  Collection:                             "Collection de concepts"
+  ManagingCollections:                    "Gérer les collections"
+  NewCollection:                          "Nouvelle collection"
+  CollectionRejected:                     "La collection a été rejetée"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  collections:
+    index:
+      # Columns titles
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Parent:                                  "Business area"
+      Owner:                                   "Responsable"
+      UpdatedBy:                               "Mis à jour par"
+      UpdatedAt:                               "Mis à jour le"
+    show:
+      Manage:                                  "Gérer les collections"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      read_SDMX:
+        Button:                               "Refresh"
+        Title:                                "Refresh the Concepts by quering remote resource"
+      SDMXResource:                            "URL de la ressource SDMX"
+      SDMXResourceDefinition:                  "Cette ressource définit une URL vers un service Web SDMX à partir duquel les variables définies (concepts) sont importées ou mises à jour sur la base de la liste d'identifiants. Si la liste est vide, toutes les variables de la ressource sont prises en compte."
+      Resource:                                "Ressource"
+      ResourcePattern:                         "Variables sélectionnées"
+      ResourceType:                            "Type de ressource"
+      ImportConcepts:                          "Importer des concepts"
+      NewConcept:                              "Nouveau de concept"
+    new:
+      New:                                     "Nouvelle collection"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Resource:                                "Ressource"
+      ResourcePattern:                         "Variables sélectionnées"    
+    edit:
+      Edit:                                    "Modifier la collection"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      SDMXResource:                            "URL de la ressource SDMX"
+      SDMXResourceDefinition:                  "Cette ressource définit une URL vers un service Web SDMX à partir duquel les variables définies (concepts) sont importées ou mises à jour sur la base de la liste d'identifiants. Si la liste est vide, toutes les variables de la ressource sont prises en compte."
+      ResourcePattern:                         "Variables sélectionnées"
+    new_version:
+      Success:                                "Nouvelle version créée"
+      Failure:                                "La nouvelle version ne peut pas être crée"
+    make_current:
+      Success:                                "La version est sélectionnée"
+      Failure:                                "Cette version ne peut pas être sélectionnée"
+    finalise:
+      Success:                                "Collection finalisée"
+      Failure:                                "La collection ne peut pas être finalisée"
+    create:
+      Success:                             	  "Nouvelle collection créée"
+      Failure:                                "La nouvelle collection ne peut pas être créée"
+    update:
+      Success:                             	  "Collection modifiée"
+      Failure:                                "La collection ne peut pas être modifiée"
+    activate:
+      Success:                             	  "Collection récupérée"
+      Failure:                                "La collection ne peut pas être récupérée"
+    destroy:
+      Success:                             	  "Collection supprimée"
+      Failure:                                "La collection ne peut pas être supprimée"
+    propose:
+      Success:                                "Collection a été soumise à validation"
+      Failure:                                "La collection ne peut pas être soumise à validation"
+    accept:
+      Success:                                "Collection a été validée"
+      Failure:                                "La collection ne peut pas être validée"
+    read_SDMX:
+      ImportedConcepts:                       "Concepts ajoutés"
+      UpdatedConcepts:                        "Concepts modifiés"
+      TotalConcepts:                          "Concepts lus"
+      InsertedAnnotations:                    "Annotations ajoutées"
+      UpdatedAnnotations:                     "Annotations modifiées"

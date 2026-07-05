@@ -1,0 +1,106 @@
+# Code for language as declared in i18n configuration
+fr:
+  MasterdataSets:                                "Masterdata"
+  MasterdataSet:                                 "Masterdata"
+  ManagingMasterdataSets:                        "Gérer les masterdata"
+  NewMasterdataSet:                              "Nouvelle masterdata"
+  MasterdataSetRejected:                         "La masterdata a été rejetée"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  masterdata_sets:
+    index:
+      # Columns titles
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Parent:                                  "Business area"
+      Owner:                                   "Responsable"
+      UpdatedBy:                               "Mis à jour par"
+      UpdatedAt:                               "Mis à jour le"
+    show:
+      Manage:                                  "Gérer les Masterdata"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ActiveFrom:                             "Actif de"
+      ActiveTo:                               "à"
+      SDMXResource:                            "URL de la ressource SDMX"
+      SDMXResourceDefinition:                  "Cette ressource définit une URL vers un service Web SDMX à partir duquel les variables définies (concepts) sont importées ou mises à jour sur la base de la liste d'identifiants. Si la liste est vide, toutes les variables de la ressource sont prises en compte."
+      Resource:                                "Ressource"    
+      ValuesType:                              "Type de ressource"
+      DataType:                                "Type de code"
+      CodeMaxLength:                           "Longueur du code"
+      Show:                                   "Voir"
+      Edit:                                   "Modifier"
+      Delete:                                 "Supprimer"
+    new:
+      New:                                     "Nouvelle Masterdata"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ActiveFrom:                             "Actif de"
+      ActiveTo:                               "à"
+      SDMXResource:                            "URL de la ressource SDMX"
+      SDMXResourceDefinition:                  "Cette ressource définit une URL vers un service Web SDMX à partir duquel les variables définies (concepts) sont importées ou mises à jour sur la base de la liste d'identifiants. Si la liste est vide, toutes les variables de la ressource sont prises en compte."
+      Resource:                                "Ressource"      
+      ValuesType:                              "Type de ressource"
+      DataType:                                "Type de code"
+      CodeMaxLength:                           "Longueur du code"
+    edit:
+      Edit:                                    "Modifier la Masterdata"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      ActiveFrom:                             "Actif de"
+      ActiveTo:                               "à"
+      SDMXResource:                            "URL de la ressource SDMX"
+      SDMXResourceDefinition:                  "Cette ressource définit une URL vers un service Web SDMX à partir duquel les variables définies (concepts) sont importées ou mises à jour sur la base de la liste d'identifiants. Si la liste est vide, toutes les variables de la ressource sont prises en compte."
+      Resource:                                "Ressource"    
+      ValuesType:                              "Type de ressource"
+      DataType:                                "Type de code"
+      CodeMaxLength:                           "Longueur du code"  
+    new_version:
+      Success:                                "Nouvelle version créée"
+      Failure:                                "La nouvelle version ne peut pas être crée"
+    make_current:
+      Success:                                "La version est sélectionnée"
+      Failure:                                "Cette version ne peut pas être sélectionnée"
+    finalise:
+      Success:                                "Values list finalisée"
+      Failure:                                "La Masterdata ne peut pas être finalisée"
+    create:
+      Success:                             	  "Nouvelle Masterdata créée"
+      Failure:                                "La nouvelle Masterdata ne peut pas être créée"
+    update:
+      Success:                             	  "Values list modifiée"
+      Failure:                                "La Masterdata ne peut pas être modifiée"
+    activate:
+      Success:                             	  "Values list récupérée"
+      Failure:                                "La Masterdata ne peut pas être récupérée"
+    destroy:
+      Success:                             	  "Values list supprimée"
+      Failure:                                "La Masterdata ne peut pas être supprimée"
+    propose:
+      Success:                                "Values list a été soumise à validation"
+      Failure:                                "La Masterdata ne peut pas être soumise à validation"
+    accept:
+      Success:                                "Values list a été validée"
+      Failure:                                "La Masterdata ne peut pas être validée"
+    reopen:
+      Success:                                "Values list a été réouverte"
+      Failure:                                "La Masterdata ne peut pas être réouverte"
+    release:
+      Success:                                "Values list a été libérée"
+      Failure:                                "La Masterdata ne peut pas être libérée"
+    reject:
+      Success:                                "Values list a été rejetée"
+      Failure:                                "La Masterdata ne peut pas être rejetée"
+    read_SDMX:
+      ImportedValues:                         "Codes added"
+      UpdatedValues:                       "Codes updated"
+      TotalValues:                            "Codes read"
+      InsertedAnnotations:                    "Annotations added"
+      UpdatedAnnotations:                  "Annotations updated"      

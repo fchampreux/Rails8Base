@@ -1,0 +1,109 @@
+# Code for language as declared in i18n configuration
+en:
+  Partials:
+    Object:
+      Code:                             "Identifier"
+      Order:                            "Sort"
+      Alias:                            "Alias"
+      Name:                             "Name"
+      Description:                      "Description"
+      Status:                           "Status"
+      Version:                          "Version"
+      Type:                             "Type"
+    Responsibilities:
+      Organisation:                     "Organisation"
+      Responsible:                      "Responsible"
+      Deputy:                           "Deputy"
+    Ownership:
+      UniqueId:                         "Unique id"
+      Parent:                           "Parent"
+      Owner:                            "Owner"
+      CreatedBy:                        "Created by"
+      CreatedAt:                        "Created on"
+      UpdatedBy:                        "Modified by"
+      UpdatedAt:                        "Modified on"
+      UUID:                             "UUID"
+      PCFindex:                         "PCF index"
+      PCFreference:                     "PCF reference"
+    Versions:
+      Versions:                          Versions"
+      IsActive:                         "Active"
+      IsCurrent:                        "Current"
+      IsFinal:                          "Finalized"
+    Index:
+      New:                              "Create"
+      CalculatedStatus:                 "Status"
+    Annotations:
+      URI:                              "URI"
+      Type:                             "Type"
+      Title:                            "Title"
+      Text:                             "Text"
+# Forms
+  New:                                   "Create"
+  Submit:                                "Submit"
+  Cancel:                                "Cancel"
+  
+  # Validation workflow
+  ValidationWorkflow:                     "ValidationWorkflow"
+  Status:                                 "Status"
+  Propose:                                "Propose"
+  Accept:                                 "Accept"
+  Reject:                                 "Reject"
+  Reopen:                                 "Reopen"
+  Release:                                "Release"
+  Push:                                   "Export"
+  RYes:                                    "Yes"
+  RNo:                                     "No"
+
+  # Columns titles
+  Code:                                   "Identifier"
+  TechCode:                               "Technical name"
+  Name:                                   "Name"
+  Description:                            "Description"
+  Owner:                                  "Owner"
+  UpdatedBy:                              "Updated by"
+  UpdatedAt:                              "Updated at"
+  Level:                                  "Level"
+  Filter:                                 "Filter"
+  SourceFile:                             "Source file"
+  AllowsScanUp:                           "Allow searching for value parent in upper levels"
+  ImportUsage:                            "Select a file to upload, and then validate. The process imports data and checks for compliance, this can take several minutes."
+  Annotations:                            "Annotations"
+  Schedules:                              "Schedules"
+  ProductionJob:                          "Production Job"
+  
+  # Completion status
+  MetadataCompletion:                     "Metadata Completion"
+  Translations:                           "Translations"
+  MasterdataSet:                             "Value domain"
+  LinkedVariable:                         "Concepts"
+  DataTypes:                              "Data Types"
+  Responsibilities:                       "Responsibilities"
+  PrimaryKey:                             "Primary Key"
+  Translations_hint:                      "Represents the count of Name and Description translations that have been filled-in regarding count of available languages"
+  MasterdataSet_hint:                        "Represents the percentage of approved code-lists referenced by the object"
+  LinkedVariable_hint:                    "Represents the percentage of approved defined variables referenced by the object"
+  Responsibilities_hint:                  "Represents the percentage of responsibility details defined for  the object"
+  DataTypes_hint:                         "Represents the consistency between CODE-LIST data type and other data specifications the object"
+  PrimaryKey_hint:                        "Detects the presence of at least one variable with DIMENSION role to build the primary key of the object"
+
+  # Datatables headers
+  ParamName:                               "Name"
+  ParamType:                               "Data type"
+  ParamValue:                              "Value"
+  ParamIsMandatory:                        "Mandatory"
+  # Tabs
+  Specifications:                         "Specifications"
+  Information:                            "Information"
+  Access:                                 "Access"
+  Schema:                                 "Schema"
+  Details:                                "Details"
+  # Confirmation
+  SureDelete:                             "Do you confirm the deletion?"
+  shared:
+    attachements:
+      FileName:                           "File name"
+      FileType:                           "File type"
+      FileSize:                           "Size"
+  #Versions:
+  Versions:                               "Versions"

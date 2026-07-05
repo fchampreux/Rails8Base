@@ -1,0 +1,110 @@
+# Code for language as declared in i18n configuration
+en:
+  MasterdataSets:                               "Masterdata"
+  MasterdataSet:                                "Masterdata"
+  ManagingMasterdataSets:                       "Manage Masterdata"
+  NewMasterdataSet:                             "New Masterdata"
+  MasterdataSetRejected:                        "Masterdata was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  masterdata_sets:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Parent:                                 "Business area"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage Masterdata"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      read_SDMX:
+        Button:                                 "Refresh"
+        Title:                                  "Refresh the values by quering remote resource"
+      Resource:                                 "Resource"
+      Variables:                                "Variable identifiers"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      SDMXResource:                           "SDMX resource URL"
+      SDMXResourceDefinition:                 "This resource defines a URL to a SDMX web service from which defined variables (concepts) are imported or updated based on the identifiers list. If the list is empty, all resource variables are considered."
+      ValuesType:                             "Usage of resource"
+      DataType:                               "Data type of code"
+      CodeMaxLength:                          "Length of the code"
+      Show:                                   "Show"
+      Edit:                                   "Edit"
+      Delete:                                 "Delete"
+    new:
+      New:                                    "New Masterdata"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      SDMXResource:                           "SDMX resource URL"
+      SDMXResourceDefinition:                 "This resource defines a URL to a SDMX web service from which defined variables (concepts) are imported or updated based on the identifiers list. If the list is empty, all resource variables are considered."
+      Resource:                               "Resource"
+      ValuesType:                             "Usage of resource"
+      DataType:                               "Data type of code"
+      CodeMaxLength:                          "Length of the code"      
+    edit:
+      Edit:                                   "Edit Masterdata"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      SDMXResource:                           "SDMX resource URL"
+      SDMXResourceDefinition:                 "This resource defines a URL to a SDMX web service from which defined variables (concepts) are imported or updated based on the identifiers list. If the list is empty, all resource variables are considered."
+      Resource:                               "Resource"
+      ValuesType:                             "Usage of resource"
+      DataType:                               "Data type of code"
+      CodeMaxLength:                          "Length of the code"      
+    new_version:
+      Success:                                "New version created"
+      Failure:                                "A new version cannot be created"
+    make_current:
+      Success:                                "Current version is selected"
+      Failure:                                "This version cannot be selected"
+    finalise:
+      Success:                                "Masterdata has been finalised"
+      Failure:                                "Masterdata cannot be finalised"
+    create:
+      Success:                             	  "Masterdata was created"
+      Failure:                                "Masterdata cannot be created"
+    update:
+      Success:                             	  "Masterdata was updated"
+      Failure:                                "Masterdata cannot be updated"
+    activate:
+      Success:                             	  "Masterdata was recovered"
+      Failure:                                "Masterdata cannot be recovered"
+    destroy:
+      Success:                             	  "Masterdata was deleted"
+      Failure:                                "Masterdata cannot be deleted"
+    propose:
+      Success:                                "Masterdata is waiting for approval"
+      Failure:                                "Masterdata cannot be submitted"
+    accept:
+      Success:                                "Masterdata has been accepted"
+      Failure:                                "Masterdata cannot change status"
+    reopen:
+      Success:                                "Masterdata has been reponed"
+      Failure:                                "Masterdata cannot change status"
+    release:
+      Success:                                "Masterdata has been released"
+      Failure:                                "Masterdata cannot change status"
+    reject:
+      Success:                                "Masterdata has been rejected"
+      Failure:                                "Masterdata cannot change status"
+    read_SDMX:
+      ImportedValues:                         "Codes added"
+      UpdatedValues:                       "Codes updated"
+      TotalValues:                            "Codes read"
+      InsertedAnnotations:                    "Annotations added"
+      UpdatedAnnotations:                  "Annotations updated"

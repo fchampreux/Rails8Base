@@ -1,0 +1,62 @@
+# Code for language as declared in i18n configuration
+de:
+  # Considered object from a global view
+  ProductionSteps:                             "Ablauf des Subprozesses"
+  ProductionStep:                              "Ablauf des Subprozesses"
+  ManagingProductionSteps:                     "Subprozesses verwalten"
+  NewProductionStep:                           "Neuer Subprozesses"
+  ProductionStepRejected:                      "Die Erstellung des Workflows ist fehlgeschlagen"
+  step_specifications:                         "Gruppenspezifikationen"
+  step_parameters:                             "Gruppeneinstellungen"
+  step_attachments:                            "Dateianhänge"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageActivity )
+  scheduler:
+    production_steps:
+      index:
+        # Columns titles
+        Code:                                   "Kennung"
+        Name:                                   "Name"
+        Description:                            "Beschreibung"
+        Owner:                                  "Eigentümer"
+        Version:                                "Aktualisiert am"
+      show:
+        Manage:                                 "Teilprozess verwalten"
+        # Field names
+        Code:                                   "Kennung"
+        Name:                                   "Name"
+        Description:                            "Beschreibung"
+        Statement:                              "Statement"
+        ShowGroup:                              "Aufgabe"
+        Resource:                               "Ressource"
+        Technology:                             "Technologie"
+        Environment:                            "Umgebung"        
+        ReturnValue:                            "Ergebnis"      
+      Group_attachments:
+        FileName:                               "Dateiname"
+        FileSize:                               "Dateigröße"
+        FileType:                               "Dateityp"
+      new:
+        New:                                    "Neuer Teilprozess"
+        # Field names
+        Code:                                   "Kennung"
+        Name:                                   "Name"
+        Description:                            "Beschreibung"
+      edit:
+        Edit:                                   "Teilprozess bearbeiten"
+        # Field names
+        Code:                                   "Kennung"
+        Name:                                   "Name"
+        Description:                            "Beschreibung"
+      create:
+        Success:                             	  "erfolgreich erstellt Teilprozess"
+        Failure:                                "Teilprozess konnte nicht erstellt werden"
+      update:
+        Success:                             	  "erfolgreich aktualisierter Teilprozess"
+        Failure:                                "Teilprozess konnte nicht aktualisierter werden"
+      activate:
+        Success:                             	  "Teilprozess erfolgreich wiederhergestellt"
+        Failure:                                "Teilprozess konnte nicht abgerufen werden"
+      destroy:
+        Success:                             	  "Teilprozess erfolgreich gelöscht"
+        Failure:                                "Teilprozess konnte nicht gelöscht werden"

@@ -1,0 +1,63 @@
+de:
+  Concepts:                                   "Konzepte"
+  Concept:                                    "Konzept"
+  ManagingConcepts:                           "Konzepte verwalten"
+  NewConcept:                                 "Neues Konzept"
+  ConceptRejected:                            "Das Konzept wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  concepts:
+    show:
+      Manage:                                  "Konzepte verwalten"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    new:
+      New:                                     "Neues Konzept"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    edit:
+      Edit:                                    "Konzept bearbeiten"
+      # Field names
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      ExternalDescription:                     "Veröffentlichte Beschreibung"
+      Annotations:                             "Annotationen"
+      ValueDomain:                             "Bereich der Werte"
+      Classification:                          "Klassifikation"
+      DataType:                                "Datentyp"
+      VariableRole:                            "Rolle"
+      AggregationMethod:                       "Aggregation"
+      VariableSize:                            "Länge"
+      VariablePrecision:                       "Genauigkeit"
+    create:
+      Success:                                 "Das Konzept wurde erstellt"
+      Failure:                                 "Das Konzept kann nicht erstellt werden"
+    update:
+      Success:                                 "Das Konzept wurde geändert"
+      Failure:                                 "Das Konzept kann nicht geändert werden"
+    destroy:
+      Success:                                 "Das Konzept wurde gelöscht"
+      Failure:                                 "Das Konzept kann nicht gelöscht werden"

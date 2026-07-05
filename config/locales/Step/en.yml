@@ -1,0 +1,82 @@
+# Code for language as declared in i18n configuration
+en:
+  # Considered object from a global view
+  Steps:                               "Steps"
+  Step:                                 "Step"
+  ManagingSteps:                       "Managing Steps"
+  NewStep:                              "New Step"
+  StepRejected:                         "Step was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageStep )
+  steps:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage Steps"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      IsSynchronus:                           "Synchronisation"
+      IsTemplate:                             "Is a template"
+      Template:                               "To use as template"
+      NoTemplate:                             "No template"
+      TemplateOn:                             "Selected template"
+      TemplateDefinition:                     "A processing template can be applied to different structures to achieve identical processing."
+      OrderingSequence:                       "Sequence"
+      Synchronus:                             "Synchronous"
+      Asynchronus:                            "Asynchronous"
+      SynchronicityOn:                        "Waits for parent traitements to start"
+      SynchronicityOff:                       "Starts as soon as it is activated by a parent traitement"
+      NextSuccess:                            "Next if successful"
+      NextFailure:                            "Next if failed"
+      Parameters:                             "Settings"
+      Technology:                             "Technology"
+      TargetObject:                           "Target"
+      SourceObject:                           "Source"
+      NodeType:                               "Node type"
+      New:                                    "New task"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+      GSBPM:                                  "GSBPM sub-process"
+      Show:                                   "Show"
+      Edit:                                   "Edit"
+      Delete:                                 "Delete"
+    new:
+      New:                                    "New Step"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      CreateStep:                         "Create a new sub-process"
+      StepTemplate:                       "Choose a template"
+      Technology:                             "Technology"
+      Options:                                "Options"
+      Template:                               "To use as template"
+      NoTemplate:                             "Blank - Create an empty sub-process"
+      BasicTemplate:                          "Minimum - Create a sub-process with the tasks START, RESCUE, END"
+      SpecificTemplate:                       "Strategy - Use a strategy defined for the chosen technology"
+    edit:
+      Edit:                                   "Edit the Step"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+    create:
+      Success:                             	  "Step was created"
+      Failure:                             	  "Step cannot be created"
+    update:
+      Success:                             	  "Step was updated"
+      Failure:                             	  "Step cannot be updated"
+    activate:
+      Success:                             	  "Step recovered"
+      Failure:                             	  "Step cannot be recovered"
+    destroy:
+      Success:                             	  "Step deleted"
+      Failure:                             	  "Step cannot be deleted"

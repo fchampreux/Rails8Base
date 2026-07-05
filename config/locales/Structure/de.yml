@@ -1,0 +1,88 @@
+# Code for language as declared in i18n configuration
+de:
+  Structures:                            "Derived Objekten"
+  Structure:                             "Derived Objekt"
+  ManagingStructures:                    "Derived Objekten verwalten"
+  NewStructure:                          "Neuer Derived Objekt"
+  StructureRejected:                     "Derived Objekt wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  structures:
+    index:
+      # Columns titles
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      Parent:                                  "Informationfeld"
+      Owner:                                   "Eigentümer"
+      UpdatedBy:                               "Aktualisiert von"
+      UpdatedAt:                               "Aktualisiert am"
+    show:
+      Manage:                                 "Derived Objekt verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Export:                                 "Exportieren"
+      TranslateInExcel:                       "Übersetzen in Excel"
+      ImportTranslations:                     "Importübersetzung"
+      ImportVariables:                        "Attribute importieren"
+      Granularity:                            "Granularität"
+      Period:                                 "Periode"
+      Participants:                           "Teilnehmer"
+      OgdOptions:                             "Offene Daten"
+      Show:                                   "Zeigen"
+      Edit:                                   "Bearbeiten"
+      Delete:                                 "Löschen"
+    open_cart:
+      Success:                                "Struktur erfolgreich geöffnet"
+    close_cart:
+      Success:                                "Struktur erfolgreich geschlossen"
+    new:
+      New:                                    "Neuer Derived Objekt"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Granularity:                            "Granularität"
+      Period:                                 "Periode"
+      Participants:                           "Teilnehmer"
+      OgdOptions:                             "Open data"
+    edit:
+      Failure:                                "Eine validierte Struktur kann nicht geändert werden"
+      Edit:                                   "Derived Objekt bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Granularity:                            "Granularität"
+      Period:                                 "Periode"
+      Participants:                           "Teilnehmer"
+      OgdOptions:                             "Open data"
+    new_version:
+      Success:                                "Erfolgreich erstellte Derived Objekt"
+      Failure:                                "Die hierarchische Liste konnte nicht erstellt werden"
+    make_current:
+      Success:                                "Derived Objekt erfolgreich ausgewählt"
+      Failure:                                "Derived Objekt konnte nicht ausgewählt werden"
+    finalise:
+      Success:                                "Derived Objekt-Version erfolgreich abgeschlossen"
+      Failure:                                 "Die Version der hierarchischen Codeliste konnte nicht fertiggestellt werden"
+    create:
+      Success:                             	  "erfolgreich erstellt Derived Objekt"
+      Failure:                                "Derived Objekt konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Derived Objekt"
+      Failure:                                "Derived Objekt konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Derived Objekt erfolgreich wiederhergestellt"
+      Failure:                                "Derived Objekt konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Derived Objekt erfolgreich gelöscht"
+      Failure:                                "Derived Objekt konnte nicht gelöscht werden"
+    propose:
+      Success:                                "Die Derived Objekt wurde vorgeschlagen."
+      Failure:                                "Derived Objekt"
+    accept:
+      Success:                                "Die Derived Objekt wurde angenommen."
+      Failure:                                "Derived Objekt"

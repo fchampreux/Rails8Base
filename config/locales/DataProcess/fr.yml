@@ -1,0 +1,74 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  DataProcesses:                              "Transformations"
+  DataProcess:                                "Transformations"
+  ManagingDataProcesses:                      "Gérer les transformations"
+  NewDataProcess:                             "Nouvelle transformations"
+  DataProcessRejected:                        "La transformation a été rejetée"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageDataProcesse )
+  data_processes:
+    index:
+      # Columns titles
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Owner:                                  "Responsable"
+      UpdatedBy:                              "Mise à jour par"
+      UpdatedAt:                              "Mise à jour le"
+    show:
+      Manage:                                 "Gérer les transformations"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"  
+      GSBPM:                                  "Processus GSBPM"
+      TargetObject:                           "Cible"
+      SourceObject:                           "Source"
+      # Datatables headers
+      Parameters:                             "Paramètres"
+      ParamName:                              "Nom"
+      ParamType:                              "Type"
+      ParamValue:                             "Valeur"
+      ParamIsMandatory:                       "Obligatoire"
+      New:                                    "Nouveau traitement"
+      Overview:                               "Aperçu"
+      TemplateOn:                             "Modèle"
+      ShowSchedule:                           "Afficher"
+      NewSchedule:                            "Créer"
+    new:
+      New:                                    "Nouvelle transformations"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      CreateDataProcesse:                     "Créer une nouvelle transformation"
+      DataProcesseTemplate:                   "Choisir un modèle"
+      Technology:                             "Technologie"
+      Options:                                "Options"
+      Template:                               "Utiliser comme modèle"
+      NoTemplate:                             "Blanc - Créer un sous-processus vide"
+      BasicTemplate:                          "Minimum - Créer un sous-processus avec les tâches START, RESCUE, END"
+      SpecificTemplate:                       "Stratégie - Utiliser une statégie définie pour la technologie choisie"
+    edit:
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      TargetObject:                           "Cible"
+      SourceObject:                           "Source"
+      SelectZone:                             "Choisissez une zone"
+      GSBPM:                                  "Processus GSBPM"
+    create:
+      Success:                             	  "Transformations créée avec succès"
+      Failure:                             	  "La transformations ne peut pas être créée"
+    update:
+      Success:                             	  "Transformations mise à jour avec succès"
+      Failure:                             	  "La transformations ne peut pas être modifiée"
+    activate:
+      Success:                             	  "Transformations récupérée"
+      Failure:                             	  "La transformations ne peut pas être récupérée"
+    destroy:
+      Success:                             	  "Transformations supprimée"
+      Failure:                             	  "La transformations ne peut pas être supprimée"

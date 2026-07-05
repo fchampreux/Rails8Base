@@ -1,0 +1,64 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  Groups:                                     "Groupes"
+  Group:                                      "Groupe"
+  ManagingGroups:                             "Gérer les groupes"
+  NewGroup:                                   "Nouveau groupe"
+  GroupRejected:                              "Le groupe a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageGroup )
+  administration:
+    groups:
+      index:
+        # Columns titles
+        CalculatedStatus:                       "Statut"
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+        UpdatedBy:                              "Mis à jour par"
+        UpdatedAt:                              "Mis à jour le"
+        Organisation:                           "Organisation"
+        Region:                                 "Région"
+        Owner:                                  "Responsable"
+      show:
+        # Field names
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+        Organisation:                           "Organisation"
+        Region:                                 "Région"
+        Roles:                                  "Rôles"
+        Members:                                "Membres"
+        UserName:                               "Login"
+        ActivityStatus:                         "Statut"
+        ActiveFrom:                             "Actif depuis"
+      new:                                    
+        New:                                    "Nouveau groupe"
+        # Field names
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+      edit:
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+        Organisation:                           "Organisation"
+        Region:                                 "Région"
+        Roles:                                  "Rôles"
+      create:
+        Success:                             	  "Groupe créé avec succès"
+        Failure:                             	  "Le groupe ne peut pas être créé"
+      update:
+        Success:                             	  "Groupe mis à jour avec succès"
+        Failure:                             	  "Le groupe ne peut pas être modifié"
+      activate:
+        Success:                             	  "Groupe récupéré"
+        Failure:                             	  "Le groupe ne peut pas être récupéré"
+      destroy:
+        Success:                             	  "Groupe supprimé"
+        Failure:                             	  "Le groupe ne peut pas être supprimé"
+    activerecord:
+      errors:
+        messages:
+          EveryoneMembershipMissing:            "Le group Everyone est obligatoire"

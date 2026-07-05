@@ -1,0 +1,53 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  BusinessAreas:                              "Domaines fonctionnels"
+  BusinessArea:                               "Domaine fonctionnel"
+  ManagingBusinessAreas:                      "Gérer les domaines"
+  NewBusinessArea:                            "Nouveau domaine fonctionnel"
+  BusinessAreaRejected:                       "Le domaine a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  business_areas:
+    index:
+      # Columns titles
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Owner:                                  "Responsable"
+      UpdatedBy:                              "Mis à jour par"
+      UpdatedAt:                              "Mis à jour le"
+      Status:                                 "Statut"
+    show:
+      Manage:                                 "Gérer les domaines"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Reviewer:                               "Réviseur"
+      Measures:                               "Indicateurs"
+    new:
+      New:                                    "Nouveau domaine fonctionnel"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+    edit:
+      Edit:                                   "Modifier le domaine"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Reviewer:                               "Réviseur"
+    create:
+      Success:                             	  "Domaine créé avec succès"
+      Failure:                             	  "Le domaine ne peut pas être créée"
+    update:
+      Success:                             	  "Domaine mis à jour avec succès"
+      Failure:                             	  "Le domaine ne peut pas être modifié"
+    activate:
+      Success:                             	  "Domaine récupéré"
+      Failure:                             	  "Le domaine ne peut pas être récupéré"
+    destroy:
+      Success:                             	  "Domaine supprimé"
+      Failure:                             	  "Le domaine ne peut pas être supprimé"

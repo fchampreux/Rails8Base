@@ -1,0 +1,65 @@
+# Code for language as declared in i18n configuration
+fr:
+  Datasets:                            "Jeux de données"
+  Dataset:                             "Jeu de données"
+  ManagingDatasets:                    "Gérer les jeux de données"
+  NewDataset:                          "Nouveau jeu de données"
+  DatasetRejected:                     "Le jeu de données a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  datasets:
+    index:
+      # Columns titles
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Parent:                                  "Business area"
+      Owner:                                   "Responsable"
+      UpdatedBy:                               "Mis à jour par"
+      UpdatedAt:                               "Mis à jour le"
+    show:
+      Manage:                                  "Gérer les jeux de données"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Export:                                 "Exporter"
+      TranslateInExcel:                       "Traduire dans Excel"
+      ImportTranslations:                     "Importer la traduction"
+      ImportVariables:                        "Importer des attributs"
+      Granularity:                            "Granularité"
+      Period:                                 "Période"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    new:
+      New:                                     "Nouveau jeu de données"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Granularity:                            "Granularité"
+      Period:                                 "Période"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    edit:
+      Edit:                                    "Modifier le jeu de données"
+      # Field names
+      Code:                                    "Identifiant"
+      Name:                                    "Nom"
+      Description:                             "Description"
+      Granularity:                            "Granularité"
+      Period:                                 "Période"
+      Participants:                           "Participants"
+      OgdOptions:                             "Open data"
+    create:
+      Success:                             	  "Nouveau jeu de données créée"
+      Failure:                                "La nouveau jeu de données ne peut pas être créée"
+    update:
+      Success:                             	  "Jeu de données modifié"
+      Failure:                                "Le jeu de données ne peut pas être modifié"
+    activate:
+      Success:                             	  "Jeu de données récupéré"
+      Failure:                                "Le jeu de données ne peut pas être récupéré"
+    destroy:
+      Success:                             	  "Jeu de données supprimé"
+      Failure:                                "Le jeu de données ne peut pas être supprimé"

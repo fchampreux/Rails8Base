@@ -1,0 +1,61 @@
+# Code for language as declared in i18n configuration
+de:
+  # Considered object from a global view
+  BusinessProcesses:                             "Geschäftsprozesse"
+  BusinessProcess:                               "Geschäftsprozess"
+  ManagingBusinessProcesses:                     "Geschäftsprozesse verwalten"
+  NewBusinessProcess:                            "Neuer Geschäftsprozess"
+  BusinessProcessRejected:                       "Geschäftsprozess wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessProcess )
+  business_processes:
+    index:
+      # Columns titles
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Owner:                                  "Eigentümer"
+      UpdatedBy:                              "Aktualisiert von"
+      UpdatedAt:                              "Aktualisiert am"
+    show:
+      Manage:                                 "Geschäftsprozess verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Participants:                           "Beteiligte Organisationen"      
+    new:
+      New:                                    "Neuer Geschäftsprozess"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Participants:                           "Beteiligte Organisationen"    
+    edit:
+      Edit:                                   "Geschäftsprozess bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Participants:                           "Beteiligte Organisationen"    
+    create:
+      Success:                             	  "erfolgreich erstellt Geschäftsprozess"
+      Failure:                                "Geschäftsprozess konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter Geschäftsprozess"
+      Failure:                                "Geschäftsprozess konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Geschäftsprozess erfolgreich wiederhergestellt"
+      Failure:                                "Geschäftsprozess konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Geschäftsprozess erfolgreich gelöscht"
+      Failure:                                "Geschäftsprozess konnte nicht gelöscht werden"
+    make_current:
+      Success:                                "Geschäftsprozess ausgewählt"
+      Failure:                                "Geschäftsprozess kann nicht ausgewählt werden"
+    new_version:
+      Success:                                "Neue Version wurde erstellt"
+      Failure:                                "Eine neue Version kann nicht erstellt werden"
+    finalize:
+      Success:                                "Geschäftsprozess fertiggestellt"
+      Failure:                                "Der Scheduled Flow kann nicht finalisiert werden"

@@ -1,0 +1,60 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  Playgrounds:                              "Entités"
+  Playground:                               "Entité"
+  ManagingPlaygrounds:                      "Gérer les Entités"
+  NewPlayground:                            "Nouvelle entité"
+  PlaygroundRejected:                       "L'entité a été rejetée"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessFlow )
+  playgrounds:
+    index:
+      # Columns titles
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Owner:                                  "Responsable"
+      UpdatedBy:                              "Mis à jour par"
+      UpdatedAt:                              "Mis à jour le"
+      # Button
+      Select:                                 "Sélectionner"
+    show:
+      Manage:                                 "Gérer les Playgrounds"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+    new:
+      New:                                    "Nouveau Playground"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+    edit:
+      Edit:                                   "Modifier le Playground"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+    create:
+      Success:                             	  "Playground créé avec succès"
+      Failure:                             	  "Le Playground ne peut pas être créé"
+    update:
+      Success:                             	  "Playground mis à jour avec succès"
+      Failure:                             	  "Le Playground ne peut pas être modifié"
+    activate:
+      Success:                             	  "Playground récupéré"
+      Failure:                             	  "Le Playground ne peut pas être récupéré"
+    destroy:
+      Success:                             	  "Playground supprimé"
+      Failure:                             	  "Le Playground ne peut pas être supprimé"
+    make_current:
+      Success:                             	  "Playground sélectionné"
+      Failure:                             	  "Le Playground ne peut pas être sélectionné"
+    new_version:
+      Success:                             	  "Nouvelle version créée"
+      Failure:                             	  "Une nouvelle version ne peut pas être créée"
+    finalize:
+      Success:                             	  "Playground finalisé"
+      Failure:                             	  "Le Playground ne peut pas être finalisé"

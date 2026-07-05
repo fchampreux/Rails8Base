@@ -1,0 +1,85 @@
+# Code for language as declared in i18n configuration
+de:
+  Collections:                             "Konzeptkollektionen"
+  Collection:                              "Konzeptkollektion"
+  ManagingCollections:                    "Konzeptkollektionen verwalten"
+  NewCollection:                          "Neue Kollektion"
+  CollectionRejected:                     "Kollektion wurde abgelehnt"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  collections:
+    index:
+      # Columns titles
+      Code:                                    "Kennung"
+      Name:                                    "Name"
+      Description:                             "Beschreibung"
+      Parent:                                  "Informationfeld"
+      Owner:                                   "Eigentümer"
+      UpdatedBy:                               "Aktualisiert von"
+      UpdatedAt:                               "Aktualisiert am"
+    show:
+      Manage:                                 "Konzeptkollektion verwalten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      read_SDMX:
+        Button:                               "Aktualisieren"
+        Title:                                "Aktualisieren der Konzepte durch Abfrage einer entfernten Ressource"
+      SDMXResource:                           "SDMX-Ressourcen-URL"
+      SDMXResourceDefinition:                 "Diese Ressource definiert eine URL zu einem SDMX-Webdienst, von dem definierte Variablen (Konzepte) auf der Grundlage der Bezeichnerliste importiert oder aktualisiert werden. Wenn die Liste leer ist, werden alle Ressourcenvariablen berücksichtigt."
+      Resource:                               "Ressource"
+      ResourcePattern:                        "Ausgewählte Variablen"
+      ResourceType:                           "RessourceTyp"
+      ImportConcepts:                         "Konzepte importieren"
+      NewConcept:                             "Neues Konzept"
+    new:
+      New:                                    "Neue Konzeptkollektionen"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      Resource:                               "Ressource"
+      ResourcePattern:                        "Ausgewählte Variablen"      
+    edit:
+      Edit:                                   "Konzeptkollektionen bearbeiten"
+      # Field names
+      Code:                                   "Kennung"
+      Name:                                   "Name"
+      Description:                            "Beschreibung"
+      SDMXResource:                            "URL der SDMX-ressource "
+      SDMXResourceDefinition:                  "Diese Ressource definiert eine URL zu einem SDMX-Webservice, von dem aus die definierten Variablen (Konzepte) auf der Grundlage der ID-Liste importiert oder aktualisiert werden. Wenn die Liste leer ist, werden alle Variablen in der Ressource berücksichtigt."
+      ResourcePattern:                         "Ausgewählte Variablen"
+    new_version:
+      Success:                                "Erfolgreich erstellte Konzeptkollektionen"
+      Failure:                                "Die hierarchische Liste konnte nicht erstellt werden"
+    make_current:
+      Success:                                "Konzeptkollektionen erfolgreich ausgewählt"
+      Failure:                                "Konzeptkollektionen konnte nicht ausgewählt werden"
+    finalise:
+      Success:                                "Konzeptkollektionen-Version erfolgreich abgeschlossen"
+      Failure:                                 "Die Version der hierarchischen Codeliste konnte nicht fertiggestellt werden"
+    create:
+      Success:                             	  "erfolgreich erstellt Konzeptkollektionen"
+      Failure:                                "Konzeptkollektionen konnte nicht erstellt werden"
+    update:
+      Success:                             	  "erfolgreich aktualisierter InformDefined Objektationfeld"
+      Failure:                                "Konzeptkollektionen konnte nicht aktualisierter werden"
+    activate:
+      Success:                             	  "Konzeptkollektionen erfolgreich wiederhergestellt"
+      Failure:                                "Konzeptkollektionen konnte nicht abgerufen werden"
+    destroy:
+      Success:                             	  "Konzeptkollektionen erfolgreich gelöscht"
+      Failure:                                "Konzeptkollektionen konnte nicht gelöscht werden"
+    propose:
+      Success:                                "Die Konzeptkollektionen wurde vorgeschlagen."
+      Failure:                                "Konzeptkollektionen"
+    accept:
+      Success:                                "Die Konzeptkollektionen wurde angenommen."
+      Failure:                                "Konzeptkollektionen"
+    read_SDMX:
+      ImportedConcepts:                       "Hinzugefügte Konzepte"
+      UpdatedConcepts:                        "Geänderte Konzepte"
+      TotalConcepts:                          "Gelesene Konzepte"
+      InsertedAnnotations:                    "Hinzugefügte Anmerkungen"
+      UpdatedAnnotations:                     "Geänderte Anmerkungen"

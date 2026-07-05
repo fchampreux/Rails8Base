@@ -1,0 +1,82 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  Steps:                               "Steps"
+  Step:                                "Step"
+  ManagingSteps:                       "Gérer les traitements"
+  NewStep:                             "Nouveau traitement"
+  StepRejected:                        "Le traitement a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageStep )
+  steps:
+    index:
+      # Columns titles
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Owner:                                  "Responsable"
+      UpdatedBy:                              "Mis à jour par"
+      UpdatedAt:                              "Mis à jour le"
+    show:
+      Manage:                                 "Gérer les traitements"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      IsSynchronus:                           "Synchronisation"
+      IsTemplate:                             "Est un modèle"
+      Template:                               "Utiliser comme modèle"
+      NoTemplate:                             "Pas de modèle"
+      TemplateOn:                             "Modèle sélectionné"
+      TemplateDefinition:                     "Un modèle de sous-processus peut être appliqué à différentes structures pour réaliser un sous-processus identique."
+      OrderingSequence:                       "Séquence"
+      Synchronus:                             "Synchrone"
+      Asynchronus:                            "Asynchrone"
+      SynchronicityOn:                        "Attend les traitements parents pour démarrer"
+      SynchronicityOff:                       "Démarre dès qu'il est activé par un traitement parent"
+      NextSuccess:                            "Suivant si succès"
+      NextFailure:                            "Suivant si échec"
+      Parameters:                             "Paramètres"
+      Technology:                             "Technologie"
+      TargetObject:                           "Cible"
+      SourceObject:                           "Source"
+      NodeType:                               "Type d'action"
+      New:                                    "Nouvelle tâche"
+      UpdatedBy:                              "Mis à jour par"
+      UpdatedAt:                              "Mis à jour le"
+      GSBPM :                                 "Sous-processus GSBPM"
+      Show:                                   "Voir"
+      Edit:                                   "Modifier"
+      Delete:                                 "Supprimer"
+    new:
+      New:                                    "Nouveau traitement"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      CreateStep:                         "Créer un nouveau traitement"
+      StepTemplate:                       "Choisir un modèle"
+      Technology:                             "Technologie"
+      Options:                                "Options"
+      Template:                               "Utiliser comme modèle"
+      NoTemplate:                             "Blanc - Créer un sous-processus vide"
+      BasicTemplate:                          "Minimum - Créer un sous-processus avec les tâches START, RESCUE, END"
+      SpecificTemplate:                       "Stratégie - Utiliser une statégie définie pour la technologie choisie"
+    edit:
+      Edit:                                   "Modifier le traitement"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+    create:
+      Success:                             	  "traitement créé avec succès"
+      Failure:                             	  "Le traitement ne peut pas être créé"
+    update:
+      Success:                             	  "traitement mis à jour avec succès"
+      Failure:                             	  "Le traitement ne peut pas être modifié"
+    activate:
+      Success:                             	  "traitement récupéré"
+      Failure:                             	  "Le traitement ne peut pas être récupéré"
+    destroy:
+      Success:                             	  "traitement supprimé"
+      Failure:                             	  "Le traitement ne peut pas être supprimé"

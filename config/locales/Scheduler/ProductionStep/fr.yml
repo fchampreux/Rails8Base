@@ -1,0 +1,64 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  ProductionSteps:                          "Sous-processus de production"
+  ProductionStep:                           "Sous-processus de production"
+  ManagingProductionSteps:                  "Gérer les Sous-processus"
+  NewProductionStep:                        "Nouveau Sous-processus"
+  ProductionStepRejected:                   "Echec de création du Sous-processus"
+  step_specifications:                      "Group specifications"
+  step_parameters:                          "Group parameters"
+  step_attachments:                         "Attachments"
+    
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageActivity )
+  scheduler:
+    production_steps:
+      index:
+        # Columns titles
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+        Owner:                                  "Responsable"
+        Version:                                "Mis à jour le"
+        Status:                                 "Statut"
+      show:
+        Manage:                                 "Gérer les sous-processus"
+        Status:                                 "Statut"
+        # Field names
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+        Statement:                              "Instruction"
+        ShowGroup:                              "Tâche"
+        Resource:                               "Ressource"
+        Technology:                             "Technologie"
+        Environment:                            "Environnement"
+      step_attachments:
+        FileName:                               "Nom du fichier"
+        FileSize:                               "Taille"
+        FileType:                               "Type"
+      new:
+        New:                                    "Nouveau sous-processus"
+        # Field names
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+      edit:
+        Edit:                                   "Modifier le sous-processus"
+        # Field names
+        Code:                                   "Identifiant"
+        Name:                                   "Nom"
+        Description:                            "Description"
+      create:
+        Success:                             	  "Sous-processus créé avec succès"
+        Failure:                             	  "Le sous-processus ne peut pas être créé"
+      update:
+        Success:                             	  "Sous-processus mis à jour avec succès"
+        Failure:                             	  "Le sous-processus ne peut pas être modifié"
+      activate:
+        Success:                             	  "Sous-processus récupéré"
+        Failure:                             	  "Le sous-processus ne peut pas être récupéré"
+      destroy:
+        Success:                             	  "Sous-processus supprimé"
+        Failure:                             	  "Le sous-processus ne peut pas être supprimé"

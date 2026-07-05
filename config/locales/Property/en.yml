@@ -1,0 +1,64 @@
+# Translations related to Variable object
+en:
+  Properties:                                                 "Properties"
+  Property:                                                  "Property"
+  ManagingProperties:                                         "Manage properties"
+  NewProperty:                                               "New property"
+  PropertyRejected:                                          "The property has been rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  properties:
+    show:
+      Manage:                                               "Manage properties"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "Published description"
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    new:
+      New:                                                  "New property"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "Published description"
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    edit:
+      Edit:                                                 "Modify the property"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "Published description"
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    create:
+      Success:                                              "The property has been created"
+      Failure:                                              "Property cannot be created"
+    update:
+      Success:                                              "The property has been modified"
+      Failure:                                              "The property cannot be modified"
+    destroy:
+      Success:                                              "The property has been deleted"
+      Failure:                                              "The property cannot be deleted"

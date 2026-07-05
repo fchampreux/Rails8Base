@@ -1,0 +1,74 @@
+# Code for language as declared in i18n configuration
+en:
+  # Considered object from a global view
+  DataProcesses:                               "Data processing"
+  DataProcess:                                 "Data processing"
+  ManagingDataProcesses:                       "Managing Data processing"
+  NewDataProcess:                              "New Data processing"
+  DataProcessRejected:                         "Data processing was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageDataProcess )
+  data_processes:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage Data processing"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      GSBPM:                                  "GSBPM Process"
+      TargetObject:                           "Target"
+      SourceObject:                           "Source"
+      # Datatables headers
+      Parameters:                             "Parameters"
+      ParamName:                              "Name"
+      ParamType:                              "Data type"
+      ParamValue:                             "Value"
+      ParamIsMandatory:                       "Mandatory"
+      Overview:                               "Overview"
+      New:                                    "New step"
+      TemplateOn:                             "Template"
+      ShowSchedule:                           "List"
+      NewSchedule:                            "Add"
+    new:
+      New:                                    "New Data processing"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      CreateDataProcess:                         "Create a new data flow"
+      DataProcessTemplate:                       "Choose a template"
+      Technology:                             "Technology"
+      Options:                                "Options"
+      Template:                               "To use as template"
+      NoTemplate:                             "Blank - Create an empty sub-process"
+      BasicTemplate:                          "Minimum - Create a sub-process with the tasks START, RESCUE, END"
+      SpecificTemplate:                       "Strategy - Use a strategy defined for the chosen technology"
+    edit:
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      TargetObject:                           "Target"
+      SourceObject:                           "Source"
+      SelectZone:                             "Choose a zone"
+      GSBPM:                                 "GSBPM process"
+    create:
+      Success:                             	  "Data processing was created"
+      Failure:                             	  "Data processing cannot be created"
+    update:
+      Success:                             	  "Data processing was updated"
+      Failure:                             	  "Data processing cannot be updated"
+    activate:
+      Success:                             	  "Data processing recovered"
+      Failure:                             	  "Data processing cannot be recovered"
+    destroy:
+      Success:                             	  "Data processing deleted"
+      Failure:                             	  "Data processing cannot be deleted"

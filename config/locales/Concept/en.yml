@@ -1,0 +1,63 @@
+en:
+  Concepts:                                                 "Concepts"
+  Concept:                                                  "Concept"
+  ManagingConcepts:                                         "Manage concepts"
+  NewConcept:                                               "New concept"
+  ConceptRejected:                                          "The concept has been rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessArea )
+  concepts:
+    show:
+      Manage:                                               "Manage concepts"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "Published description"
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    new:
+      New:                                                  "New concept"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "published description" 
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    edit:
+      Edit:                                                 "Modify the concept"
+      # Field names
+      Code:                                                 "Identifier"
+      Name:                                                 "Name"
+      Description:                                          "Description"
+      ExternalDescription:                                  "published description" 
+      Annotations:                                          "Annotations"
+      ValueDomain:                                          "Value domain"
+      Classification:                                       "Classification"
+      DataType:                                             "Data type"
+      VariableRole:                                         "Role"
+      AggregationMethod:                                    "Aggregation"
+      VariableSize:                                         "Length"
+      VariablePrecision:                                    "Precision"
+    create:
+      Success:                                              "The concept has been created"
+      Failure:                                              "Concept cannot be created"
+    update:
+      Success:                                              "The concept has been modified"
+      Failure:                                              "The concept cannot be modified"
+    destroy:
+      Success:                                              "The concept has been deleted"
+      Failure:                                              "The concept cannot be deleted"

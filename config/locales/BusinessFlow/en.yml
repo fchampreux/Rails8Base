@@ -1,0 +1,61 @@
+# Code for language as declared in i18n configuration
+en:
+  # Considered object from a global view
+  BusinessFlows:                              "Business flows"
+  BusinessFlow:                               "Business flow"
+  ManagingBusinessFlows:                      "Managing Business flows"
+  NewBusinessFlow:                            "New Business flow"
+  BusinessFlowRejected:                       "Business flow was rejected"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessFlow )
+  business_flows:
+    index:
+      # Columns titles
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      Owner:                                  "Owner"
+      UpdatedBy:                              "Updated by"
+      UpdatedAt:                              "Updated at"
+    show:
+      Manage:                                 "Manage Business flows"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      LegalBasis:                             "Legal basis"
+      Participants:                           "Participants"
+    new:
+      New:                                    "New Business flow"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      LegalBasis:                             "Legal basis"
+      Participants:                           "Participants"
+    edit:
+      Edit:                                   "Edit the Business flow"
+      # Field names
+      Code:                                   "Identifier"
+      Name:                                   "Name"
+      Description:                            "Description"
+      ActiveFrom:                             "Active from"
+      ActiveTo:                               "to"
+      LegalBasis:                             "Legal basis"
+      Participants:                           "Participants"
+    create:
+      Success:                             	  "Business flow was created"
+      Failure:                             	  "Business flow cannot be created"
+    update:
+      Success:                             	  "Business flow was updated"
+      Failure:                             	  "Business flow cannot be updated"
+    activate:
+      Success:                             	  "Business flow recovered"
+      Failure:                             	  "Business flow cannot be recovered"
+    destroy:
+      Success:                             	  "Business flow deleted"
+      Failure:                             	  "Business flow cannot be deleted"

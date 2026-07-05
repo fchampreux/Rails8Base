@@ -1,0 +1,99 @@
+# Code for language as declared in i18n configuration
+de:
+  # Considered object from a global view
+  Users:                              "Benutzer"
+  User:                                "Benutzer"
+  ManagingUsers:                      "Benutzer verwalten"
+  NewUser:                             "Neuer Benutzer"
+  UserRejected:                        "Benutzer wurde abgelehnt"
+  # Considered object from controller's methods In the controller, the relative path for the term is marked by the point ()
+  # Use generic terms, excluding objec name (ie Manage instead of ManageUser )
+  administration:
+    users:
+      index:
+        # Columns titles
+        CalculatedStatus:                       "Status"
+        UserName:                               "Login"
+        Name:                                   "Name"
+        MainGroup:                              "Hauptgruppe"
+        ActivityStatus:                         "Statut"
+        Description:                            "Beschreibung"
+        Owner:                                  "Eigentümer"
+        UpdatedBy:                              "Aktualisiert von"
+        UpdatedAt:                              "Aktualisiert am"
+        Organisation:                           "Organisation"
+        ActiveFrom:                              "Gültig von"
+        ActiveTo:                                "bis"
+      show:
+        AccountData:                            "Daten des Kontos"
+        PersonalData:                           "Persönliche Daten"
+        AuthorisationData:                      "Berechtigungen"
+        # Feldnamen
+        Code:                                   "Kennung"
+        FirstName:                              "Vorname"
+        LastName:                               "Name"
+        Email:                                  "E-Mail-Adresse"
+        Description:                            "Beschreibung"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Gültig von"
+        ActiveTo:                               "bis"
+        ActivityStatus:                         "Status"
+        Language:                               "Sprache"
+        IsAdmin:                                "Administrator"
+        UserRoles:                              "Native Rollen"
+        ExternalRoles:                          "Importierte Rollen"
+        ExternalDirectory:                      "Externe Kennung"
+        PreferredBusinessFlows:                 "Geschäftsabläufe"
+        ChangeMyPassword:                       "Mein Passwort ändern"
+        Groups:                                 "Gruppen"
+        RYes:                                   "Ja"
+        RNo:                                    "Nein"
+      new:
+        AccountData:                            "Daten des Kontos"
+        PersonalData:                           "Persönliche Daten"                        
+        # Feldnamen
+        Code:                                   "Kennung"
+        FirstName:                              "Vorname"
+        LastName:                               "Name"
+        Email:                                  "E-Mail-Adresse"
+        Description:                            "Beschreibung"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Gültig von"
+        ActiveTo:                               "bis"
+        Language:                               "Sprache"
+      edit:
+        AccountData:                            "Daten des Kontos"
+        PersonalData:                           "Persönliche Daten"
+        # Feldnamen
+        Code:                                   "Kennung"
+        FirstName:                              "Vorname"
+        LastName:                               "Name"
+        Email:                                  "E-Mail-Adresse"
+        UserName:                               "Login"
+        Beschreibung:                           "Beschreibung"
+        Organisation:                           "Organisation"
+        ActiveFrom:                             "Gültig von"
+        ActiveTo:                               "bis"
+        Language:                               "Sprache"
+        IsAdmin:                                "Administrator"
+        Password:                               "Passwort"
+        Confirmation:                           "Bestätigung"
+        UserRoles:                              "Native Rollen"
+        ExternalRoles:                          "Importierte Rollen"
+        PreferredBusinessFlows:                 "Geschäftsabläufe"
+        ChangeMyPassword:                       "Mein Passwort ändern"
+        Groups:                                 "Gruppen"
+        CurrentPassword:                        "Aktuelles Passwort"
+        Info:                                   "(Wir benötigen Ihr aktuelles Passwort, um ein neues Passwort zu speichern)"
+      create:
+        Success:                             	  "erfolgreich erstellt Benutzer"
+        Failure:                                "Benutzer konnte nicht erstellt werden"
+      update:
+        Success:                             	  "erfolgreich aktualisierter Benutzer"
+        Failure:                                "Benutzer konnte nicht aktualisierter werden"
+      activate:
+        Success:                             	  "Benutzer erfolgreich wiederhergestellt"
+        Failure:                                "Benutzer konnte nicht abgerufen werden"
+      destroy:
+        Success:                             	  "Benutzer erfolgreich gelöscht"
+        Failure:                                "Benutzer konnte nicht gelöscht werden"

@@ -1,0 +1,70 @@
+# Code for language as declared in i18n configuration
+fr:
+  Navigation:
+    Applications:
+      Governance:                             "Gouvernance"
+      Metadata:                               "Métadonnées"
+      Scheduler:                              "Planification"
+      Administration:                         "Configuration"
+      #Translation:
+      User:                                   "Utilisateur"
+      SignOut:                                "Déconnexion"
+      SignIn:                                 "Connexion"
+      Help:                                   "Aide"
+      HomePage:                               "Accueil"
+      Parent:                                 "Parent"
+    Menu:
+      Playgrounds:                            "Entités"
+      BusinessHierarchy:                      "Entités"
+      BusinessAreas:                          "Domaines fonctionnels"
+      BusinessFlows:                          "Flux métiers"
+      BusinessProcesses:                      "Processus métiers"
+      Collections:                            "Collections de concepts"
+      MasterdataSets:                         "Masterdata"                         
+      Classifications:                        "Classifications"
+      #Concepts:                               "Concepts"
+      Structures:                             "Structures"
+      Datasets:                               "Jeux de données"
+      #Properties:                             "Variables"
+      DataProcesses:                          "Transformations"
+      BusinessRules:                          "Plausibilisation"
+    Interaction:
+      Translations:                           "Traduction"
+      #TranslationsOn:                         "Voir les traductions"
+      #TranslationsOff:                        "Masquer les traductions"
+      ViewAll:                                "Voir tout"
+      ViewMine:                               "Voir l'essentiel"
+      Create:                                 "Créer"
+      Edit:                                   "Modifier"
+      Submit:                                 "Valider"
+      Cancel:                                 "Annuler"
+      Delete:                                 "Supprimer"
+      Recall:                                 "Récupérer"
+      # Workflow
+      Propose:                                "Soumettre"
+      Accept:                                 "Accepter"
+      Reject:                                 "Rejeter"
+      Reopen:                                 "Reprendre"
+      # Lists
+      Import:                                 "Importer"
+      Export:                                 "Exporter"
+      AddRow:                                 "Ajouter"
+      RemoveRow:                              "Supprimer"
+      # Version management
+      NewVersion:                             "Nouvelle version"
+      MakeCurrent:                            "Sélectionner"
+      Finalise:                               "Finaliser"
+      # Shopping Cart
+      OpenSelection:                          "Ouvrir"
+      CloseSelection:                         "Fermer"
+      Add:                                    "Ajouter"
+      InstancesCount:                         "Nombre"
+      BackTo:                                 "Revenir à "
+      ToApprove:                              "A valider"
+      ToApproveMessage:                       "A valider"
+      Success:                                "Propriété ajoutée"
+      # Search
+      Search:                                 "Chercher"
+    Details:
+      ShowDetails:                           "Détails"
+      TechnicalDetails:                      "Détails techniques"

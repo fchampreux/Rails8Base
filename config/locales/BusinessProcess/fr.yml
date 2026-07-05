@@ -1,0 +1,52 @@
+# Code for language as declared in i18n configuration
+fr:
+  # Considered object from a global view
+  BusinessProcesses:                            "Processus métiers"
+  BusinessProcess:                              "Processus métier"
+  ManagingBusinessProcesses:                    "Gérer les processus métiers"
+  NewBusinessProcess:                           "Nouveau processus métier"
+  BusinessProcessRejected:                      "Le processus métier a été rejeté"
+  # Considered object from controller's methods. In the controller, the relative path for the term is marked by the point (.)
+  # Use generic terms, excluding objec name (ie Manage instead of ManageBusinessProcess )
+  business_processes:
+    index:
+      # Columns titles
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Owner:                                  "Responsable"
+      UpdatedBy:                              "Mis à jour par"
+      UpdatedAt:                              "Mis à jour le"
+    show:
+      Manage:                                 "Gérer les Processus métiers"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Participants:                           "Organisations impliquées"
+    new:
+      New:                                    "Nouveau Processus métier"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Participants:                           "Organisations impliquées"
+    edit:
+      Edit:                                   "Modifier le Processus métier"
+      # Field names
+      Code:                                   "Identifiant"
+      Name:                                   "Nom"
+      Description:                            "Description"
+      Participants:                           "Organisations impliquées"
+    create:
+      Success:                             	  "Processus métier créé avec succès"
+      Failure:                             	  "Le Processus métier ne peut pas être créé"
+    update:
+      Success:                             	  "Processus métier mis à jour avec succès"
+      Failure:                             	  "Le Processus métier ne peut pas être modifié"
+    activate:
+      Success:                             	  "Processus métier récupéré"
+      Failure:                             	  "Le Processus métier ne peut pas être récupéré"
+    destroy:
+      Success:                             	  "Processus métier supprimé"
+      Failure:                             	  "Le Processus métier ne peut pas être supprimé"

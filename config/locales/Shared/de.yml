@@ -1,0 +1,109 @@
+# Code for language as declared in i18n configuration
+de:
+  Partials:
+    Object:
+      Code:                               "Kennung"
+      Order:                              "Sortierung"
+      Alias:                              "Alias"
+      Name:                               "Name"
+      Description:                        "Beschreibung"
+      Status:                             "Status"
+      Version:                            "Version"
+      Type:                               "Typ"
+    Responsibilities:
+      Organisation:                       "Organisation"
+      Responsible:                        "Verantwortlicher"
+      Deputy:                             "Stellvertreter"
+    Ownership:
+      UniqueId:                           "Unique id"
+      Parent:                             "Elternteil"
+      Owner:                              "Eigentümer"
+      CreatedBy:                          "Erstellt von"
+      CreatedAt:                          "Erstellt am"
+      UpdatedBy:                          "Geändert durch"
+      UpdatedAt:                          "Geändert am"
+      UUID:                               "UUID"
+      PCFindex:                           "PCF index"
+      PCFreference:                       "PCF Referenz"
+    Versions:
+      Versions:                           "Versionen"
+      IsActive:                           "Aktiv"
+      IsCurrent:                          "Aktuell"
+      IsFinal:                            "Fertiggestellt"
+    Index:
+      New:                                "Erstellen"
+      CalculatedStatus:                   "Status"
+    Annotations:
+      URI:                                "URI"
+      Typ:                                "Typ"
+      Title:                              "Titel"
+      Text:                               "Text"
+# Forms
+  New:                                    "Erstellen"
+  Submit:                                 "Bestätigen"
+  Cancel:                                 "Abbrechen"
+
+  # Validation workflow
+  ValidationWorkflow:                     "Validierungsprozess"
+  Status:                                 "Status"
+  Propose:                                "Einreichen"
+  Accept:                                 "Übernehmen"
+  Reject:                                 "Ablehnen"
+  Reopen:                                 "Öffnen"
+  Release:                                "Freigabe"
+  Push:                                   "Exportieren"
+  RYes:                                    "Ja!"
+  RNo:                                     "Nein!"
+
+  # Columns titles
+  Code:                                   "Kennung"
+  TechCode:                               "Technischer Name"
+  Name:                                   "Name"
+  Description:                            "Beschreibung"
+  Owner:                                  "Eigentümer"
+  UpdatedBy:                              "Aktualisiert von"
+  UpdatedAt:                              "Aktualisiert am"
+  Level:                                  "Ebene"
+  Filter:                                 "Filtre"
+  SourceFile:                             "Quelldatei"
+  AllowsScanUp:                           "Suche nach übergeordneten Werten in oberen Ebenen zulassen"
+  ImportUsage:                            "Wählen Sie eine Datei aus, die hochgeladen werden soll, und validieren Sie dann Der Prozess importiert Daten und prüft auf Übereinstimmung, dies kann einige Minuten dauern"
+  Annotations:                            "Anmerkungen"
+  Schedules:                              "Planung"
+  ProductionJob:                          "Produktionsjob"
+
+  # Completion status
+  MetadataCompletion:                     "Metadaten Vervollständigung"
+  Translations:                           "Übersetzungen"
+  MasterdataSet:                          "Codelisten"
+  LinkedVariable:                         "Quellvariable"
+  DataTypes:                              "Datentypen"
+  Responsibilities:                       "Verantwortlichkeiten"
+  PrimaryKey:                             "Primärschlüssel"
+  Translations_hint:                      "Stellt die Anzahl der Übersetzungen von Name und Beschreibung dar, die in Bezug auf die Anzahl der verfügbaren Sprachen ausgefüllt wurden"
+  MasterdataSet_hint:                        "Stellt den Prozentsatz der genehmigten Codelisten dar, auf die das Objekt verweist"
+  LinkedVariable_hint:                    "Stellt den Prozentsatz der genehmigten definierten Variablen dar, die vom Objekt referenziert werden"
+  Responsibilities_hint:                  "Stellt den Prozentsatz der für das Objekt definierten Verantwortungsdetails dar"
+  DataTypes_hint:                         "Stellt die Konsistenz zwischen CODE-LIST-Datentyp und anderen Datenangaben des Objekts dar"
+  PrimaryKey_hint:                        "Erkennt das Vorhandensein von mindestens einer Variablen mit DIMENSION-Rolle, um den Primärschlüssel des Objekts zu bilden"
+  
+  # Datatables headers
+  ParamName:                               "Name"
+  ParamType:                               "Typ"
+  ParamValue:                              "Wert"
+  ParamIsMandatory:                        "Obligatorisch"
+  # Tabs
+  Specifications:                         "Spezifikationen"
+  Information:                            "Informationen"
+  Access:                                 "Zugang"
+  Schema:                                 "Zeichnungen"
+  Details:                                "Details"
+  # Confirmation
+  SureDelete:                             "Bestätigen Sie die Löschung?"
+  shared:
+    attachments:
+      FileName:                           "Dateiname"
+      FileType:                           "Dateityp"
+      FileSize:                           "Größe"
+  #Versions:
+  Versions:                               "Versionen"
