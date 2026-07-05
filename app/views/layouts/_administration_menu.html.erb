@@ -1,0 +1,38 @@
+<nav id="administration_menu" class="flex flex-col w-64 shrink-0 border-2 border-solid rounded-sm border-blue-400 p-2 space-y-2">
+  <h3 class="font-bold px-1">Customisation</h3>
+
+  <details open>
+    <summary class="font-semibold cursor-pointer hover:text-emerald-700">Security</summary>
+    <ul class="pl-4 mt-1 space-y-1">
+      <li><%= link_to "Users",        "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Groups/Roles", "#", class: "block hover:text-emerald-700" %></li>
+    </ul>
+  </details>
+
+  <details open>
+    <summary class="font-semibold cursor-pointer hover:text-emerald-700">Settings</summary>
+    <ul class="pl-4 mt-1 space-y-1">
+      <li><%= link_to "Settings",    "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Data Import", "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "API",         "#", class: "block hover:text-emerald-700" %></li>
+    </ul>
+  </details>
+
+  <details open>
+    <summary class="font-semibold cursor-pointer hover:text-emerald-700">Topology</summary>
+    <ul class="pl-4 mt-1 space-y-1">
+      <li><%= link_to "Organisations", "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Regions",       "#", class: "block hover:text-emerald-700" %></li>
+    </ul>
+  </details>
+
+  <details open>
+    <summary class="font-semibold cursor-pointer hover:text-emerald-700">Infrastructure</summary>
+    <ul class="pl-4 mt-1 space-y-1">
+      <li><%= link_to "Business Resources",  "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Technical Resources", "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Environments",        "#", class: "block hover:text-emerald-700" %></li>
+      <li><%= link_to "Connections",         "#", class: "block hover:text-emerald-700" %></li>
+    </ul>
+  </details>
+</nav>

@@ -27,17 +27,13 @@
     <%= render "layouts/header" %>
 
     <div id="content" class="flex bg-white text-grey-800 rounded-sm">
+      <%= render "layouts/administration_menu" %>
       <div id="application" class="relative w-full min-h-[80vh] border-2 border-solid rounded-sm">
-        <nav id="administration_menu" class="inline-grid grid-cols-4 gap-4 shrink-0 w-full ml-auto border-2 border-solid rounded-sm border-blue-400">
-          <%= link_to "Security",       "#", class: "text-center hover:text-emerald-700" %>
-          <%= link_to "Settings",       "#", class: "text-center hover:text-emerald-700" %>
-          <%= link_to "Topology",       "#", class: "text-center hover:text-emerald-700" %>
-          <%= link_to "Infrastructure", "#", class: "text-center hover:text-emerald-700" %>
-        </nav>
         <div id="app_content" class="border-2 border-solid rounded-sm border-blue-400">
           <%= yield %>
         </div>
       </div>
+      <%= render "layouts/notifications" %>
     </div>
 
     <%= render "layouts/footer" %>

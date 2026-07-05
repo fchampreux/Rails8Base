@@ -71,11 +71,7 @@
           app-actions
         </div>  
       </div>
-      <div id="notifications" class="w-1/5 border-2 border-solid rounded-sm bg-blue-400">
-        app-notifications
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-      </div>
+      <%= render "layouts/notifications" %>
     </div>
 
     <%= render "layouts/footer" %>
