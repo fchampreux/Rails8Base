@@ -1,0 +1,7 @@
+<div id="<%= dom_id user %>" class="w-full sm:w-auto my-5 space-y-2">
+  <p><strong>Code:</strong> <%= user.code %></p>
+  <p><strong>Name:</strong> <%= user.first_name %> <%= user.last_name %></p>
+  <p><strong>Email:</strong> <%= user.email %></p>
+  <p><strong>Administrator:</strong> <%= user.is_admin? ? "Yes" : "No" %></p>
+  <p><strong>Active:</strong> <%= user.is_active? ? "Yes" : "No" %></p>
+</div>

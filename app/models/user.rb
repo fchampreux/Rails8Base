@@ -24,6 +24,9 @@ class User < ApplicationRecord
 
   before_validation :self_reference_ownership, on: :create
 
+  has_many :users_groups, dependent: :destroy
+  has_many :groups, through: :users_groups
+
   ### validations
   validates :code,          presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
   validates :uuid,          uniqueness: true

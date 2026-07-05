@@ -55,6 +55,9 @@ RSpec.configure do |config|
   # FactoryBot shortcuts
   config.include FactoryBot::Syntax::Methods
 
+  # Devise sign_in/sign_out helpers for request specs
+  config.include Devise::Test::IntegrationHelpers, type: :request
+
   # RSpec Rails uses metadata to mix in different behaviours to your tests,
   # for example enabling you to call `get` and `post` in request specs. e.g.:
   #

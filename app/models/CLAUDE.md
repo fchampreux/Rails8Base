@@ -46,7 +46,7 @@ belongs_to :created_by, class_name: "User", foreign_key: :created_by_id
 belongs_to :updated_by, class_name: "User", foreign_key: :updated_by_id
 
 validates :code,      presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
-validates :uuid,      presence: true, uniqueness: true
+validates :uuid,      uniqueness: true # no presence: true — the DB default (gen_random_uuid()) isn't set in Ruby until insert
 validates :is_active, inclusion: { in: [ true, false ] }
 
 scope :active,   -> { where(is_active: true) }

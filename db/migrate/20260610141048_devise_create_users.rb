@@ -14,7 +14,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[8.1]
       t.datetime :active_to, comment: "Ending timestamp of the validity period"
 
       ## Database authenticatable
-      t.string :email,  limit: 100, null: false, default: "", comment: "User email, may be used for identification"
+      t.string :email,  limit: 255, null: false, default: "", comment: "User email, may be used for identification"
       t.string :encrypted_password, null: false, default: "", comment: "User password, encrypted credential"
 
       ## Recoverable
@@ -48,6 +48,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[8.1]
       t.integer :created_by_id, null: false, comment: "Account creator id (just as for every object)"
       t.integer :updated_by_id, null: false, comment: "Account editor id (just as for every object)"
       t.boolean :is_active,     null: false, default: false, comment: "Account validity flag (just as for every object)"
+      t.boolean :is_admin,      null: false, default: false, comment: "Administration privileges flag"
       t.json    :description, comment: "JSON field contains translated descriptions (just as for every object)"
 
       t.timestamps null: false, comment: "Record activity trace (just as for every object)"
@@ -63,6 +64,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[8.1]
     add_index :users, :created_by_id
     add_index :users, :updated_by_id
     add_index :users, :is_active
+    add_index :users, :is_admin
 
     # Self-referential FKs: bootstrap rows reference themselves (id 0 -> owner_id 0, etc.)
     add_foreign_key :users, :users, column: :owner_id
