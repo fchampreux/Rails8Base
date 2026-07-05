@@ -14,8 +14,10 @@
         <span>1</span>
         <span>2</span>
         <span>3</span>
-        <%= link_to "#", class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Administration", aria: { label: "Gérer l'application" } do %>
-          <i class="fa-solid fa-screwdriver-wrench"></i>
+        <% if current_user.is_admin? %>
+          <%= link_to administration_root_path, class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Administration", aria: { label: "Gérer l'application" } do %>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, data: { turbo_method: :delete }, class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Se déconnecter", aria: { label: "Fermer la session" } do %>
           <i class="fa-solid fa-right-from-bracket text-xl"></i>
