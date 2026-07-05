@@ -9,6 +9,7 @@ class User < ApplicationRecord
          :trackable, :confirmable, :lockable
 
   attribute :is_active, :boolean, default: false
+  attribute :is_admin,  :boolean, default: false
 
   before_save :email_format
 
@@ -30,11 +31,13 @@ class User < ApplicationRecord
   validates :created_by_id, presence: true
   validates :updated_by_id, presence: true
   validates :is_active,     inclusion: { in: [ true, false ] }
+  validates :is_admin,      inclusion: { in: [ true, false ] }
   validates :email,         presence: true, length: { maximum: 255 }, format: { with: /\A(\S+)@(.+)\.(\S+)\z/ }
   validate :password_complexity
 
   scope :active,   -> { where(is_active: true) }
   scope :inactive, -> { where(is_active: false) }
+  scope :admin,    -> { where(is_admin: true) }
 
   def password_complexity
     # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a

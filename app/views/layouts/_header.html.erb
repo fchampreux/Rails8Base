@@ -10,11 +10,13 @@
       Title of the page currently displayed: <%= yield(:title) %>
     </div>
     <nav id="portal-navigation" class="inline-grid grid-cols-6 gap-4 shrink-0 ml-auto border-2 border-solid rounded-sm border-blue-400">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
       <% if user_signed_in? %>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <%= link_to "#", class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Administration", aria: { label: "Gérer l'application" } do %>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        <% end %>
         <%= link_to destroy_user_session_path, data: { turbo_method: :delete }, class: "flex items-center justify-center text-white hover:text-emerald-200", title: "Se déconnecter", aria: { label: "Fermer la session" } do %>
           <i class="fa-solid fa-right-from-bracket text-xl"></i>
         <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_07_05_133843) do
+ActiveRecord::Schema[8.1].define(version: 2026_07_05_142517) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
@@ -34,6 +34,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_07_05_133843) do
     t.integer "failed_attempts", default: 0, null: false, comment: "Trace sign-in attemps count (Devise)"
     t.string "first_name", limit: 255, comment: "User first name (informational)"
     t.boolean "is_active", default: false, null: false, comment: "Account validity flag (just as for every object)"
+    t.boolean "is_admin", default: false, null: false, comment: "Administration privileges flag"
     t.string "last_name", limit: 255, comment: "User last name (informational)"
     t.datetime "last_sign_in_at", comment: "Trace account activity : last sign-in timestamp (Devise)"
     t.string "last_sign_in_ip", comment: "Trace account activity : last sign-in IP (Devise)"
@@ -54,6 +55,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_07_05_133843) do
     t.index ["created_by_id"], name: "index_users_on_created_by_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["is_active"], name: "index_users_on_is_active"
+    t.index ["is_admin"], name: "index_users_on_is_admin"
     t.index ["owner_id"], name: "index_users_on_owner_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true

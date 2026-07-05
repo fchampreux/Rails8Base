@@ -40,6 +40,7 @@ if User.none?
     owner_id: unassigned.id,
     created_by_id: unassigned.id,
     updated_by_id: unassigned.id,
+    is_admin: true,
     password: admin_pass,
     password_confirmation: admin_pass
   ).save(validate: false)
