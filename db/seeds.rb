@@ -1,9 +1,10 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# Usage: ADMIN_PASS=#DQAdmin01! rails db:seed
+if ENV["ADMIN_PASS"]
+  Dir[Rails.root.join('db/seeds/*.rb')].sort.each do |file|
+    puts "Processing #{file.split('/').last}"
+    require file
+  end
+else
+  puts "Please provide strong Administrator password: 8 positions including at least 1 upper case letter, 1 lowercase letter, 1 number, 1 sign (other than '_')"
+  puts "Usage: ADMIN_PASS=<password> rails db:seed"
+end
