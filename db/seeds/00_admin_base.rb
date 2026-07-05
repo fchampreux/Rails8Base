@@ -1,0 +1,50 @@
+### Initialise application customisation tables
+
+## User table (No translation for users)
+puts "Seeding users"
+if User.none?
+  admin_pass = ENV.fetch("ADMIN_PASS") { raise "ADMIN_PASS environment variable is not set" }
+
+  puts "Creating first users"
+
+  # Default placeholder user — id forced to 0, bypasses validations intentionally
+  # FK audit columns set to 0: self-referential bootstrap row references itself
+  # confirmed_at set explicitly: :confirmable would block sign-in otherwise
+  User.new(
+    id: 0,
+    code: "unassigned",
+    first_name: "Undefined",
+    last_name: "User",
+    email: "unassigned@opendataquality.com",
+    active_from: "2000-01-01",
+    active_to: "2100-01-01",
+    confirmed_at: Time.current,
+    password: admin_pass,
+    password_confirmation: admin_pass,
+    owner_id: 0,
+    created_by_id: 0,
+    updated_by_id: 0
+  ).save(validate: false)
+
+  unassigned = User.find(0)
+
+  # Administrator
+  User.new(
+    code: "admin",
+    first_name: "Open Data Quality",
+    last_name: "Administrator",
+    email: "admin@opendataquality.com",
+    active_from: "2000-01-01",
+    active_to: "2100-01-01",
+    confirmed_at: Time.current,
+    owner_id: unassigned.id,
+    created_by_id: unassigned.id,
+    updated_by_id: unassigned.id,
+    password: admin_pass,
+    password_confirmation: admin_pass
+  ).save(validate: false)
+
+  puts User.pluck(:code).inspect
+  Rails.logger.info "Created users: #{User.pluck(:code).join(", ")}"
+  puts "---"
+end
