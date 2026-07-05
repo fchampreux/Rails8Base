@@ -30,7 +30,7 @@ class User < ApplicationRecord
   validates :created_by_id, presence: true
   validates :updated_by_id, presence: true
   validates :is_active,     inclusion: { in: [ true, false ] }
-  validates :email,         presence: true, length: { maximum: 100 }, format: { with: /\A(\S+)@(.+)\.(\S+)\z/ }
+  validates :email,         presence: true, length: { maximum: 255 }, format: { with: /\A(\S+)@(.+)\.(\S+)\z/ }
   validate :password_complexity
 
   scope :active,   -> { where(is_active: true) }

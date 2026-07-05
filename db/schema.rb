@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_10_141048) do
+ActiveRecord::Schema[8.1].define(version: 2026_07_05_133843) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
@@ -29,7 +29,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_10_141048) do
     t.datetime "current_sign_in_at", comment: "Trace account activity : sign-in timestamp (Devise)"
     t.string "current_sign_in_ip", comment: "Trace account activity : sign-in IP (Devise)"
     t.json "description", comment: "JSON field contains translated descriptions (just as for every object)"
-    t.string "email", limit: 100, default: "", null: false, comment: "User email, may be used for identification"
+    t.string "email", limit: 255, default: "", null: false, comment: "User email, may be used for identification"
     t.string "encrypted_password", default: "", null: false, comment: "User password, encrypted credential"
     t.integer "failed_attempts", default: 0, null: false, comment: "Trace sign-in attemps count (Devise)"
     t.string "first_name", limit: 255, comment: "User first name (informational)"
