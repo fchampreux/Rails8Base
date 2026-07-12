@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :groups
   devise_for :users
 
   namespace :open do
@@ -9,6 +8,7 @@ Rails.application.routes.draw do
   namespace :administration do
     root to: "dashboard#index"
     resources :users
+    resources :groups
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

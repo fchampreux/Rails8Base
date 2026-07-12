@@ -59,7 +59,7 @@ if Group.none?
     owner_id: admin.id,
     created_by_id: admin.id,
     updated_by_id: admin.id,
-    sort_code: "a"
+    sort_code: "0"
   )
   group.save(validate: false)
 end

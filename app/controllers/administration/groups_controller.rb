@@ -1,4 +1,4 @@
-class GroupsController < ApplicationController
+class Administration::GroupsController < ApplicationController
   before_action :set_group, only: %i[ show edit update destroy ]
 
   # GET /groups or /groups.json
