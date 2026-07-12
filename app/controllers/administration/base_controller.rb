@@ -1,4 +1,6 @@
 class Administration::BaseController < ApplicationController
+  include Pagy::Backend
+
   layout "administration"
 
   before_action :require_admin!

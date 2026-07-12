@@ -1,9 +1,21 @@
 class Administration::UsersController < Administration::BaseController
+  # Only DB-indexed columns (or index-backed combinations) are offered as sort keys,
+  # so ordering stays index-backed.
+  SORT_COLUMNS = {
+    "code"      => %i[ code ],
+    "is_active" => %i[ is_active ],
+    "owner_id"  => %i[ owner_id ],
+    "name"      => %i[ last_name first_name ]
+  }.freeze
+
   before_action :set_user, only: %i[ show edit update destroy ]
 
   # GET /administration/users
   def index
-    @users = User.all
+    scope  = User.includes(:owner, :main_group)
+    scope  = scope.search(params[:q]) if params[:q].present?
+    scope  = scope.order(sort_columns.index_with { sort_direction })
+    @pagy, @users = pagy(scope)
   end
 
   # GET /administration/users/1
@@ -56,6 +68,14 @@ class Administration::UsersController < Administration::BaseController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def sort_columns
+    SORT_COLUMNS[params[:sort]] || SORT_COLUMNS["code"]
+  end
+
+  def sort_direction
+    params[:direction] == "desc" ? :desc : :asc
   end
 
   def user_params

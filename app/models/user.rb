@@ -26,6 +26,8 @@ class User < ApplicationRecord
 
   has_many :users_groups, dependent: :destroy
   has_many :groups, through: :users_groups
+  has_one :main_users_group, -> { where(is_main_group: true) }, class_name: "UsersGroup"
+  has_one :main_group, through: :main_users_group, source: :group
 
   ### validations
   validates :code,          presence: true, uniqueness: { case_sensitive: false }, length: { maximum: 64 }
@@ -41,6 +43,15 @@ class User < ApplicationRecord
   scope :active,   -> { where(is_active: true) }
   scope :inactive, -> { where(is_active: false) }
   scope :admin,    -> { where(is_admin: true) }
+  scope :search,   ->(term) {
+    pattern = "%#{sanitize_sql_like(term)}%"
+    where("code ILIKE :t OR first_name ILIKE :t OR last_name ILIKE :t OR email ILIKE :t", t: pattern)
+  }
+
+  def devise_status
+    return :locked if access_locked?
+    confirmed? ? :confirmed : :unconfirmed
+  end
 
   def password_complexity
     # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a

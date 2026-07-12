@@ -18,6 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 # Use Tailwind for UI
 gem "tailwindcss-rails"
+# Pagination
+gem "pagy", "~> 9.4"
 # Use Devise for versatile authentication
 gem "devise"
 gem "omniauth-linkedin-oauth2", ">= 1.0.1"

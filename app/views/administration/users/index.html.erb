@@ -5,25 +5,99 @@
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
   <% end %>
 
-  <div class="flex justify-between items-center">
+  <div class="flex justify-between items-center mb-4">
     <h1 class="font-bold text-4xl">Users</h1>
     <%= link_to "New user", new_administration_user_path, class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white block font-medium" %>
   </div>
 
-  <div id="users" class="min-w-full divide-y divide-gray-200 space-y-5">
-    <% if @users.any? %>
-      <% @users.each do |user| %>
-        <div class="flex flex-col sm:flex-row justify-between items-center pb-5 sm:pb-0">
-          <%= render user %>
-          <div class="w-full sm:w-auto flex flex-col sm:flex-row space-x-2 space-y-2">
-            <%= link_to "Show", administration_user_path(user), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-            <%= link_to "Edit", edit_administration_user_path(user), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-            <%= button_to "Deactivate", administration_user_path(user), method: :delete, class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer", data: { turbo_confirm: "Are you sure?" } %>
-          </div>
-        </div>
+  <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
+    <%= form_with url: administration_users_path, method: :get, class: "flex items-center gap-2" do %>
+      <%= hidden_field_tag :sort, params[:sort] %>
+      <%= hidden_field_tag :direction, params[:direction] %>
+      <%= text_field_tag :q, params[:q], placeholder: "Search...", class: "rounded-md border-gray-300 px-3 py-1.5 text-sm" %>
+      <%= submit_tag "Search", class: "rounded-md px-3 py-1.5 bg-gray-100 hover:bg-gray-50 text-sm font-medium cursor-pointer" %>
+      <% if params[:q].present? %>
+        <%= link_to "Clear", administration_users_path(sort: params[:sort], direction: params[:direction]), class: "text-sm text-gray-500 hover:underline" %>
       <% end %>
-    <% else %>
-      <p class="text-center my-10">No users found.</p>
     <% end %>
+
+    <%= form_with url: administration_users_path, method: :get, class: "flex items-center gap-2 text-sm" do %>
+      <%= hidden_field_tag :q, params[:q] %>
+      <%= hidden_field_tag :sort, params[:sort] %>
+      <%= hidden_field_tag :direction, params[:direction] %>
+      <label for="limit">Rows per page</label>
+      <%= select_tag :limit, options_for_select([ 10, 20, 50, 100 ], @pagy.vars[:limit]), onchange: "this.form.requestSubmit()", class: "rounded-md border-gray-300 py-1.5 text-sm" %>
+    <% end %>
+  </div>
+
+  <div class="overflow-x-auto">
+    <table id="users" class="min-w-full divide-y divide-gray-200">
+      <thead>
+        <tr class="text-left text-sm font-semibold">
+          <% [ [ "Active", "is_active" ], [ "Code", "code" ] ].each do |label, column| %>
+            <th class="px-3 py-2">
+              <% next_direction = (params[:sort] == column && params[:direction] != "desc") ? "desc" : "asc" %>
+              <%= link_to administration_users_path(q: params[:q], limit: params[:limit], sort: column, direction: next_direction), class: "inline-flex items-center gap-1 hover:text-emerald-700" do %>
+                <%= label %>
+                <% if params[:sort] == column %>
+                  <i class="fa-solid <%= params[:direction] == "desc" ? "fa-arrow-down" : "fa-arrow-up" %> text-xs"></i>
+                <% end %>
+              <% end %>
+            </th>
+          <% end %>
+          <th class="px-3 py-2">
+            <% name_direction = (params[:sort] == "name" && params[:direction] != "desc") ? "desc" : "asc" %>
+            <%= link_to administration_users_path(q: params[:q], limit: params[:limit], sort: "name", direction: name_direction), class: "inline-flex items-center gap-1 hover:text-emerald-700" do %>
+              Name
+              <% if params[:sort] == "name" %>
+                <i class="fa-solid <%= params[:direction] == "desc" ? "fa-arrow-down" : "fa-arrow-up" %> text-xs"></i>
+              <% end %>
+            <% end %>
+          </th>
+          <th class="px-3 py-2">Main group</th>
+          <th class="px-3 py-2">Devise status</th>
+          <th class="px-3 py-2">Active from</th>
+          <th class="px-3 py-2">Active to</th>
+          <th class="px-3 py-2">
+            <% owner_direction = (params[:sort] == "owner_id" && params[:direction] != "desc") ? "desc" : "asc" %>
+            <%= link_to administration_users_path(q: params[:q], limit: params[:limit], sort: "owner_id", direction: owner_direction), class: "inline-flex items-center gap-1 hover:text-emerald-700" do %>
+              Owner
+              <% if params[:sort] == "owner_id" %>
+                <i class="fa-solid <%= params[:direction] == "desc" ? "fa-arrow-down" : "fa-arrow-up" %> text-xs"></i>
+              <% end %>
+            <% end %>
+          </th>
+          <th class="px-3 py-2">Updated at</th>
+          <th class="px-3 py-2"></th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <% if @users.any? %>
+          <%= render @users %>
+        <% else %>
+          <tr>
+            <td colspan="10" class="text-center py-10">No users found.</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+    <p><%= @pagy.count %> users — page <%= @pagy.page %> of <%= @pagy.pages %></p>
+
+    <div class="flex items-center gap-2">
+      <% if @pagy.prev %>
+        <%= link_to "Previous", pagy_url_for(@pagy, @pagy.prev), class: "px-3 py-1.5 rounded-md bg-gray-100 hover:bg-gray-50 font-medium" %>
+      <% else %>
+        <span class="px-3 py-1.5 rounded-md bg-gray-50 text-gray-300">Previous</span>
+      <% end %>
+
+      <% if @pagy.next %>
+        <%= link_to "Next", pagy_url_for(@pagy, @pagy.next), class: "px-3 py-1.5 rounded-md bg-gray-100 hover:bg-gray-50 font-medium" %>
+      <% else %>
+        <span class="px-3 py-1.5 rounded-md bg-gray-50 text-gray-300">Next</span>
+      <% end %>
+    </div>
   </div>
 </div>

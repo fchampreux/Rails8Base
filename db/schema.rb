@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_07_05_165112) do
+ActiveRecord::Schema[8.1].define(version: 2026_07_12_143903) do
   create_schema "rails_app"
 
   # These are extensions that must be enabled in order to support this database
@@ -76,6 +76,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_07_05_165112) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["is_active"], name: "index_users_on_is_active"
     t.index ["is_admin"], name: "index_users_on_is_admin"
+    t.index ["last_name", "first_name"], name: "index_users_on_last_name_and_first_name"
     t.index ["owner_id"], name: "index_users_on_owner_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
