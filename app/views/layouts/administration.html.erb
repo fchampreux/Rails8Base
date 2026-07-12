@@ -26,13 +26,39 @@
 
     <%= render "layouts/header" %>
 
-    <div id="content" class="flex bg-white text-grey-800 rounded-sm">
-      <%= render "layouts/administration_menu" %>
-      <div id="application" class="relative w-full min-h-[80vh] border-2 border-solid rounded-sm">
-        <div id="app_content" class="border-2 border-solid rounded-sm border-blue-400">
-          <%= yield %>
+    <div class="flex">
+      <div id="administration" class="w-full">
+        <div id="top-menu" class="flex items-center w-full h-16 px-4 border-2 border-solid rounded-sm border-blue-400">
+          <%= link_to root_path, class: "text-xl hover:text-emerald-700" do %>
+            <i class="fa-solid fa-house"></i>
+          <% end %>
+
+          <div class="flex items-center gap-4 ml-auto text-sm">
+            <button type="button" data-filter="all" class="flex items-center gap-2 hover:text-emerald-700">
+              <i class="fa-solid fa-list"></i>
+              <span>View all</span>
+            </button>
+            <button type="button" data-filter="active" class="flex items-center gap-2 hover:text-emerald-700">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>View active</span>
+            </button>
+            <button type="button" data-filter="mine" class="flex items-center gap-2 hover:text-emerald-700">
+              <i class="fa-solid fa-user"></i>
+              <span>View mine</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="content" class="flex bg-white text-grey-800 rounded-sm">
+          <%= render "layouts/administration_menu" %>
+          <div id="management" class="relative w-full min-h-[80vh] border-2 border-solid rounded-sm">
+            <div id="app_content" class="border-2 border-solid rounded-sm border-blue-400">
+              <%= yield %>
+            </div>
+          </div>
         </div>
       </div>
+
       <%= render "layouts/notifications" %>
     </div>
 
