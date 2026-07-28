@@ -1,75 +1,64 @@
-class Administration::GroupsController < ApplicationController
+class Administration::GroupsController < Administration::BaseController
   before_action :set_group, only: %i[ show edit update destroy ]
 
-  # GET /groups or /groups.json
+  # GET /administration/groups
   def index
     @groups = Group.all
   end
 
-  # GET /groups/1 or /groups/1.json
+  # GET /administration/groups/1
   def show
   end
 
-  # GET /groups/new
+  # GET /administration/groups/new
   def new
     @group = Group.new
   end
 
-  # GET /groups/1/edit
+  # GET /administration/groups/1/edit
   def edit
   end
 
-  # POST /groups or /groups.json
+  # POST /administration/groups
   def create
     @group = Group.new(group_params)
     @group.owner_id      = current_user.id
     @group.created_by_id = current_user.id
     @group.updated_by_id = current_user.id
 
-    respond_to do |format|
-      if @group.save
-        format.html { redirect_to @group, notice: "Group was successfully created." }
-        format.json { render :show, status: :created, location: @group }
-      else
-        format.html { render :new, status: :unprocessable_content }
-        format.json { render json: @group.errors, status: :unprocessable_content }
-      end
+    if @group.save
+      redirect_to administration_group_path(@group), notice: t(".Success")
+    else
+      render :new, status: :unprocessable_content
     end
   end
 
-  # PATCH/PUT /groups/1 or /groups/1.json
+  # PATCH/PUT /administration/groups/1
   def update
     @group.updated_by_id = current_user.id
 
-    respond_to do |format|
-      if @group.update(group_params)
-        format.html { redirect_to @group, notice: "Group was successfully updated.", status: :see_other }
-        format.json { render :show, status: :ok, location: @group }
-      else
-        format.html { render :edit, status: :unprocessable_content }
-        format.json { render json: @group.errors, status: :unprocessable_content }
-      end
+    if @group.update(group_params)
+      redirect_to administration_group_path(@group), notice: t(".Success"), status: :see_other
+    else
+      render :edit, status: :unprocessable_content
     end
   end
 
-  # DELETE /groups/1 or /groups/1.json
+  # DELETE /administration/groups/1
+  # Nothing is ever hard-deleted (see app/models/CLAUDE.md) — deactivate instead.
   def destroy
-    @group.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to groups_path, notice: "Group was successfully destroyed.", status: :see_other }
-      format.json { head :no_content }
-    end
+    @group.updated_by_id = current_user.id
+    @group.update!(is_active: false)
+    redirect_to administration_groups_path, notice: t(".Success"), status: :see_other
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_group
-      @group = Group.find(params.expect(:id))
-    end
 
-    # Only allow a list of trusted parameters through.
-    def group_params
-      params.require(:group).permit(:code, :sort_code, :is_active)
-    end
+  def set_group
+    @group = Group.find(params[:id])
+  end
+
+  def group_params
+    params.require(:group).permit(:code, :sort_code, :is_active)
+  end
 end
